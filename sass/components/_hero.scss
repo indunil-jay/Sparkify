@@ -6,8 +6,13 @@
 
   &__details {
     background-color: var(--color-white);
-    align-self: center;
+
+    @include flex-center;
   }
+
+  &__details__box {
+  }
+
   &__heading {
     line-height: 1.2;
     text-align: left;
@@ -40,8 +45,24 @@
   &__arrow {
     margin-left: 1rem;
   }
-
   &__gallery {
-    background-color: green;
+    @include flex-center;
+  }
+
+  &__masonary {
+    width: 100%;
+    columns: 3;
+    column-gap: 20px;
+  }
+
+  &__image__box {
+    width: 100%;
+    margin-bottom: 10px;
+    break-inside: avoid;
+
+    img {
+      max-width: 100%;
+      border-radius: 15px;
+    }
   }
 }
