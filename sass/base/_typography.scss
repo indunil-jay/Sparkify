@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
@@ -24,6 +28,17 @@ ul {
 .heading--1 {
   font-size: var(--font-size-xlg);
   font-weight: 700;
+
+  @include responsive(desktop-small) {
+    font-size: 4.2rem;
+  }
+
+  @include responsive(mobile-lg) {
+    font-size: var(--font-size-md);
+  }
+  @include responsive(mobile-lg) {
+    font-size: var(--font-size-xmd);
+  }
 }
 
 .paragraph--1 {
@@ -31,4 +46,11 @@ ul {
   font-weight: 400;
   line-height: 1.4;
   color: var(--color-grey);
+  @include responsive(desktop-small) {
+    font-size: var(--font-size-default);
+  }
+
+  @include responsive(mobile-lg) {
+    font-size: 1.4rem;
+  }
 }

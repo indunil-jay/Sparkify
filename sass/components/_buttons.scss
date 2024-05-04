@@ -38,4 +38,19 @@ button:focus-visible {
   border-radius: var(--space-5);
   font-size: var(--font-size-xsmd);
   font-weight: 500;
+
+  @include responsive(desktop-small) {
+    padding: var(--space-9) var(--space-11);
+
+    font-size: var(--font-size-smd);
+  }
+  @include responsive(desktop-small) {
+    padding: var(--space-8) var(--space-10);
+
+    font-size: var(--font-size-default);
+  }
+  @include responsive(mobile-md) {
+    padding: var(--space-6) var(--space-8);
+    font-size: var(--font-size-default);
+  }
 }

@@ -1,6 +1,6 @@
 .header {
   grid-column: center-start / center-end;
-
+  padding-inline: 1rem;
   display: grid;
   grid-template-columns: 38rem 1fr 38rem;
   height: 10rem;
@@ -18,7 +18,7 @@
   }
 
   @include responsive(mobile-md) {
-    margin: 0 2px;
+    margin: 0 4px;
   }
 
   &__left {
@@ -36,7 +36,7 @@
   &__logoName {
     font-size: var(--font-size-xlg);
     color: var(--color--primary-950);
-    font-weight: 500;
+    font-weight: 700;
     margin-right: var(--space-10);
     @include responsive(desktop-small) {
       font-size: var(--font-size-lg);
@@ -84,10 +84,10 @@
 
   &__link:visited,
   &__link:link {
-    color: var(--color-grey);
-    text-transform: capitalize;
-    letter-spacing: 1px;
     font-size: var(--font-size-smd);
+    font-weight: 500;
+    color: var(--color--primary-900);
+    text-transform: capitalize;
     transition: color var(--transition-timing-2)
       cubic-bezier(0.075, 0.82, 0.165, 1);
 

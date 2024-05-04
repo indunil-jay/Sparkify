@@ -4,34 +4,87 @@
   height: calc(95dvh - 10rem);
   width: 100%;
 
+  @include responsive(desktop-small) {
+    grid-template-columns: 1fr 50rem;
+  }
+  @include responsive(tabs) {
+    grid-template-columns: 1fr;
+  }
+
   &__details {
     background-color: var(--color-white);
-
+    background-color: blue;
     @include flex-center;
+
+    @include responsive(mobile-md) {
+      align-items: start;
+      padding-top: 10rem;
+    }
   }
 
   &__details__box {
+    @include responsive(tabs) {
+      padding-inline: var(--space-17);
+    }
+    @include responsive(mobile-md) {
+      padding-inline: var(--space-10);
+    }
+    @include responsive(mobile-sm) {
+      padding-inline: var(--space-6);
+    }
   }
 
   &__heading {
     line-height: 1.2;
     text-align: left;
+
+    @include responsive(tabs) {
+      text-align: center;
+    }
   }
 
   &__text {
     margin: var(--space-13) 0;
     text-align: left;
     width: 80%;
+    @include responsive(tabs) {
+      text-align: center;
+      width: 70%;
+      margin: var(--space-13) auto;
+    }
+    @include responsive(mobile-lg) {
+      width: 90%;
+    }
+    @include responsive(mobile-md) {
+      margin: var(--space-10) 0;
+      width: 100%;
+    }
   }
   &__cta {
     display: flex;
     align-items: center;
     justify-content: start;
+    @include responsive(tabs) {
+      justify-content: center;
+    }
+    @include responsive(mobile-md) {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+  &__callbtn {
+    @include responsive(mobile-md) {
+      order: 2;
+    }
   }
   &__call {
     display: flex;
     flex-direction: column;
     margin-left: var(--space-14);
+    @include responsive(mobile-md) {
+      margin: 0;
+      text-align: center;
+    }
   }
   &__callNumber {
     font-size: var(--font-size-default);
@@ -41,18 +94,35 @@
     font-size: var(--font-size-default);
     margin-top: var(--space-4);
     color: var(--color-grey);
+
+    @include responsive(mobile-md) {
+      margin: 0;
+    }
   }
   &__arrow {
     margin-left: 1rem;
+
+    @include responsive(mobile-md) {
+      margin-left: 0.6rem;
+    }
   }
   &__gallery {
     @include flex-center;
+
+    @include responsive(tabs) {
+      display: none;
+    }
   }
 
   &__masonary {
+    padding: var(--space-10);
     width: 100%;
     columns: 3;
     column-gap: 20px;
+
+    @include responsive(desktop-small) {
+      width: 90%;
+    }
   }
 
   &__image__box {
