@@ -1,0 +1,16 @@
+{
+  "name": "sparkify",
+  "version": "1.0.0",
+  "description": "init",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel ./index.html",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
