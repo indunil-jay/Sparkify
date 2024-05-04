@@ -4,11 +4,78 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sparkify</title>
-    <script type="module" defer src="./src/index.ts"></script>
+    <link
+      rel="shortcut icon"
+      href="./images/logos/sparkify-logo-sm.png"
+      type="image/png"
+    />
     <link rel="stylesheet" href="./sass/main.scss" />
+    <script type="module" defer src="./src/index.ts"></script>
   </head>
-  <body>
+  <body class="container">
     <!--  -->
-    <h1>Hello</h1>
+    <header class="header" aria-label="Desktop Navigation"">
+      <!-- logo left -->
+      <div class="header__left">
+        <a
+          href="/"
+          class="header__logo"
+          aria-roledescription="company logo work as button to navigate home."
+          role="navigation"
+        >
+          <span class="header__logoName">Sparkify</span>
+          <div class="header__logoPicture">
+            <img
+              src="./images/logos/sparkify-logo-sm.png"
+              alt="sparkify  company logo."
+            />
+          </div>
+        </a>
+      </div>
+      <!-- navigation middle -->
+      <nav class="header__middle" aria-label="Main Navigation" role="navigation">
+        <ul class="header__navigations">
+          <li class="header__nav">
+            <a href="#section--home" class="header__link">Home</a>
+          </li>
+          <li class="header__nav">
+            <a href="#section--features" class="header__link">Features</a>
+          </li>
+          <li class="header__nav">
+            <a href="#section--blog" class="header__link">Blog</a>
+          </li>
+          <li class="header__nav">
+            <a href="#section--contactus" class="header__link">Support</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- right -->
+      <div class="header__right">
+        <svg class="icon header__icon header__icon--sun header__icon--sun--active" >
+          <use xlink:href="./images/sprite.svg#icon-sun"></use>
+        </svg>
+
+        <svg class="icon header__icon header__icon--moon header__icon--moon--hidden" >
+          <use xlink:href="./images/sprite.svg#icon-moon"></use>
+        </svg>
+
+        <div class="header__btn-container">
+          <a href="#" class="header__btn btn btn--border">Sign in</a>
+          <a href="#" class="header__btn btn btn--primary">Sign up</a>
+        </div>
+
+       <button class="header__icon header__icon--menu--hidden" aria-label="open mobile menu">
+      <svg class="icon">
+        <use xlink:href="./images/sprite.svg#icon-menu"></use>
+      </svg>
+    </button>
+    <button class="header__icon header__icon--close header__icon--close--hidden" aria-label="close mobile menu">
+      <svg class="icon">
+        <use xlink:href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+      </div>
+    </header>
   </body>
 </html>
