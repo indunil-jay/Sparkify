@@ -17,10 +17,17 @@ body {
 
 .container {
   position: relative;
-  padding: 0 var(--space-13);
-  margin: 0 auto;
   background-color: var(--color-white);
   position: relative;
+  margin: 0 var(--space-10);
+
+  @include responsive(desktop-small) {
+    margin: 0 var(--space-6);
+  }
+
+  @include responsive(mobile-md) {
+    margin: 0 2px;
+  }
 }
 
 .icon {
@@ -35,7 +42,7 @@ body {
   display: inline-block;
   font-size: var(--font-size-xsmd);
   color: var(--color--primary-950);
-  padding: var(--space-9) var(--space-13);
+
   border-radius: 1rem;
 }
 

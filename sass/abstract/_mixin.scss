@@ -9,3 +9,39 @@
   justify-content: center;
   align-items: center;
 }
+
+//media query manager.
+
+@mixin responsive($break-point) {
+  //1280px
+  @if $break-point == desktop-small {
+    @media only screen and (max-width: 80em) {
+      @content;
+    }
+  }
+  //1024px
+  @if $break-point == tabs {
+    @media only screen and (max-width: 64em) {
+      @content;
+    }
+  }
+
+  //768px
+  @if $break-point == mobile-lg {
+    @media only screen and (max-width: 55em) {
+      @content;
+    }
+  }
+  //600px
+  @if $break-point == mobile-md {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+  //420px
+  @if $break-point == mobile-sm {
+    @media only screen and (max-width: 26.25em) {
+      @content;
+    }
+  }
+}

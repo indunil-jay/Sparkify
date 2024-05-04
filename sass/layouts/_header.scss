@@ -5,6 +5,16 @@
   border-bottom: 1px solid var(--color--primary-50);
   box-shadow: var(--box-shadow-bottom);
 
+  @include responsive(desktop-small) {
+    grid-template-columns: 30rem 1fr 30rem;
+  }
+
+  @include responsive(tabs) {
+    display: flex;
+    justify-content: space-between;
+    height: 8rem;
+  }
+
   &__left {
     display: flex;
     align-items: center;
@@ -22,12 +32,25 @@
     color: var(--color--primary-950);
     font-weight: 500;
     margin-right: var(--space-10);
+    @include responsive(desktop-small) {
+      font-size: var(--font-size-lg);
+      margin-right: var(--space-7);
+    }
+    @include responsive(mobile-lg) {
+      font-size: var(--font-size-md);
+      margin-right: var(--space-3);
+    }
   }
 
   &__logoPicture {
     width: 6rem;
     height: 6rem;
     @include flex-center;
+
+    @include responsive(mobile-lg) {
+      width: 4.6rem;
+      height: 4.6rem;
+    }
 
     img {
       @include image-fit;
@@ -36,13 +59,21 @@
 
   &__middle {
     @include flex-center;
+
+    @include responsive(tabs) {
+      display: none;
+    }
   }
   &__navigations {
     display: flex;
-    gap: var(--space-10);
+    gap: var(--space-6);
+
+    @include responsive(desktop-small) {
+      gap: var(--space-3);
+    }
   }
   &__nav {
-    padding: var(--space-9) var(--space-13);
+    padding: var(--space-9) var(--space-10);
   }
 
   &__link:visited,
@@ -54,6 +85,10 @@
     transition: color var(--transition-timing-2)
       cubic-bezier(0.075, 0.82, 0.165, 1);
 
+    @include responsive(desktop-small) {
+      letter-spacing: normal;
+    }
+
     &:hover {
       color: var(--color--primary-600);
     }
@@ -64,6 +99,10 @@
     justify-content: flex-end;
     align-items: center;
     gap: var(--space-8);
+
+    @include responsive(mobile-lg) {
+      gap: var(--space-13);
+    }
   }
 
   &__icon {
@@ -84,12 +123,19 @@
     &--moon--hidden {
       display: none;
     }
-    &--menu--active {
-      display: inline-block;
-    }
-    &--menu--hidden {
+    &--menu {
       display: none;
+      @include responsive(tabs) {
+        display: inline-block;
+      }
+      &--active {
+        display: inline-block;
+      }
+      &--hidden {
+        display: none;
+      }
     }
+
     &--close--active {
       display: inline-block;
     }
@@ -102,11 +148,21 @@
     display: flex;
     align-items: center;
     gap: var(--space-5);
+
+    @include responsive(mobile-lg) {
+      display: none;
+    }
   }
 
   &__btn {
+    padding: var(--space-9) var(--space-13);
     transition: box-shadow var(--transition-timing-3)
       cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    @include responsive(desktop-small) {
+      letter-spacing: normal;
+      padding: var(--space-8) var(--space-11);
+    }
     &:hover {
       box-shadow: var(--box-shadow-all-side);
     }
