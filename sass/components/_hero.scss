@@ -1,0 +1,47 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 65rem;
+  height: calc(95dvh - 10rem);
+  width: 100%;
+
+  &__details {
+    background-color: var(--color-white);
+    align-self: center;
+  }
+  &__heading {
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  &__text {
+    margin: var(--space-13) 0;
+    text-align: left;
+    width: 80%;
+  }
+  &__cta {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  &__call {
+    display: flex;
+    flex-direction: column;
+    margin-left: var(--space-14);
+  }
+  &__callNumber {
+    font-size: var(--font-size-default);
+    font-weight: 600;
+  }
+  &__callText {
+    font-size: var(--font-size-default);
+    margin-top: var(--space-4);
+    color: var(--color-grey);
+  }
+  &__arrow {
+    margin-left: 1rem;
+  }
+
+  &__gallery {
+    background-color: green;
+  }
+}

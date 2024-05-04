@@ -1,4 +1,6 @@
 .header {
+  grid-column: center-start / center-end;
+
   display: grid;
   grid-template-columns: 38rem 1fr 38rem;
   height: 10rem;
@@ -13,6 +15,10 @@
     display: flex;
     justify-content: space-between;
     height: 8rem;
+  }
+
+  @include responsive(mobile-md) {
+    margin: 0 2px;
   }
 
   &__left {
@@ -158,7 +164,7 @@
   }
 
   &__btn {
-    padding: var(--space-9) var(--space-13);
+    padding: var(--space-7) var(--space-13);
     transition: box-shadow var(--transition-timing-3)
       cubic-bezier(0.075, 0.82, 0.165, 1);
 

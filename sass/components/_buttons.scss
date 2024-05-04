@@ -1,0 +1,41 @@
+button {
+  all: unset;
+}
+
+button:focus-visible {
+  outline: 1px solid var(--color--primary-600);
+  @include flex-center;
+}
+
+.btn--fill {
+  background-color: var(--color--primary-500);
+  color: var(--color-white);
+  font-weight: 500;
+  border-radius: 1rem;
+  transition: background-color var(--transition-timing-2) ease-in-out;
+
+  &:hover {
+    background-color: var(--color--primary-600);
+  }
+}
+
+.btn--border {
+  font-weight: 500;
+  color: var(--color--primary-500);
+  border-radius: 1rem;
+  border: 1px solid var(--color--primary-100);
+  transition: color var(--transition-timing-2) ease-in-out,
+    border var(--transition-timing-2) ease-in-out;
+  &:hover {
+    color: var(--color--primary-600);
+    border: 1px solid var(--color--primary-200);
+  }
+}
+
+.btn--primary:link,
+.btn--primary:visited {
+  padding: var(--space-10) var(--space-13);
+  border-radius: var(--space-5);
+  font-size: var(--font-size-xsmd);
+  font-weight: 500;
+}

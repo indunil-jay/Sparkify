@@ -21,11 +21,14 @@ ul {
   list-style: none;
 }
 
-button {
-  all: unset;
+.heading--1 {
+  font-size: var(--font-size-xlg);
+  font-weight: 700;
 }
 
-button:focus-visible {
-  outline: 1px solid var(--color--primary-600);
-  @include flex-center;
+.paragraph--1 {
+  font-size: var(--font-size-smd);
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-grey);
 }

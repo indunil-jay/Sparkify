@@ -13,7 +13,7 @@
     <script type="module" defer src="./src/index.ts"></script>
   </head>
   <body class="container">
-    <!--  -->
+    <!--header -->
     <header class="header" aria-label="header">
       <!-- logo left -->
       <div class="header__left">
@@ -78,8 +78,8 @@
           class="header__btn-container"
           aria-label="header buttons container."
         >
-          <a href="#" class="header__btn btn btn--border">Sign in</a>
-          <a href="#" class="header__btn btn btn--primary">Sign up</a>
+          <a href="#" class="header__btn btn--border">Sign in</a>
+          <a href="#" class="header__btn btn--fill">Sign up</a>
         </div>
 
         <button
@@ -100,6 +100,37 @@
         </button>
       </div>
     </header>
+
+    <!-- main -->
+    <main class="main">
+      <section class="section__hero">
+        <div class="hero">
+          <div class="hero__details">
+            <h1 class="heading--1 hero__heading">
+              We Specialize In UI/UX, Web Development, Digital Marketing
+            </h1>
+            <p class="paragraph--1 hero__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum
+              numquam aspernatur deleniti harum iure, excepturi quidem, eaque
+              pariatur qui eligendi nesciunt voluptatibus obcaecati similique
+              necessitatibus.
+            </p>
+            <div class="hero__cta">
+              <a href="#" class="hero__callbtn btn--fill btn--primary">
+                Get start Now
+                <span class="hero__arrow"> &rarr;</span>
+              </a>
+              <div class="hero__call">
+                <span class="hero__callNumber">Call us (0123) 456 - 789</span>
+                <span class="hero__callText">For any question or concern</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__gallery"></div>
+        </div>
+      </section>
+    </main>
 
     <!-- mobile header navigation -->
     <nav
