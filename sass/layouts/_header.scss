@@ -110,39 +110,40 @@
     @include flex-center;
     transition: transform var(--transition-timing-2)
       cubic-bezier(0.075, 0.82, 0.165, 1);
+
     &:hover {
       transform: scale(1.05);
     }
+
     &--sun--active {
       display: inline-block;
     }
     &--sun--hidden {
       display: none;
     }
+
     &--moon--active {
       display: inline-block;
     }
     &--moon--hidden {
       display: none;
     }
-    &--menu {
+
+    &--menu,
+    &--close {
       display: none;
       @include responsive(tabs) {
         display: inline-block;
       }
       &--active {
-        display: inline-block;
+        display: none;
+        @include responsive(tabs) {
+          display: inline-block;
+        }
       }
       &--hidden {
         display: none;
       }
-    }
-
-    &--close--active {
-      display: inline-block;
-    }
-    &--close--hidden {
-      display: none;
     }
   }
 
