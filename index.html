@@ -14,7 +14,7 @@
   </head>
   <body class="container">
     <!--  -->
-    <header class="header" aria-label="Desktop Navigation"">
+    <header class="header" aria-label="header">
       <!-- logo left -->
       <div class="header__left">
         <a
@@ -33,7 +33,11 @@
         </a>
       </div>
       <!-- navigation middle -->
-      <nav class="header__middle" aria-label="Main Navigation" role="navigation">
+      <nav
+        class="header__middle"
+        aria-label="main navigation."
+        role="navigation"
+      >
         <ul class="header__navigations">
           <li class="header__nav">
             <a href="#section--home" class="header__link">Home</a>
@@ -52,30 +56,72 @@
 
       <!-- right -->
       <div class="header__right">
-        <svg class="icon header__icon header__icon--sun header__icon--sun--active" >
-          <use xlink:href="./images/sprite.svg#icon-sun"></use>
-        </svg>
+        <button
+          class="header__icon header__icon--sun header__icon--sun--active"
+          aria-label="theme-toggler-light."
+        >
+          <svg class="icon">
+            <use xlink:href="./images/sprite.svg#icon-sun"></use>
+          </svg>
+        </button>
 
-        <svg class="icon header__icon header__icon--moon header__icon--moon--hidden" >
-          <use xlink:href="./images/sprite.svg#icon-moon"></use>
-        </svg>
+        <button
+          class="header__icon header__icon--moon header__icon--moon--hidden"
+          aria-label="theme-toggler-dark."
+        >
+          <svg class="icon">
+            <use xlink:href="./images/sprite.svg#icon-moon"></use>
+          </svg>
+        </button>
 
-        <div class="header__btn-container">
+        <div
+          class="header__btn-container"
+          aria-label="header buttons container."
+        >
           <a href="#" class="header__btn btn btn--border">Sign in</a>
           <a href="#" class="header__btn btn btn--primary">Sign up</a>
         </div>
 
-    <button class="header__icon header__icon--menu " aria-label="open mobile menu">
-      <svg class="icon">
-        <use xlink:href="./images/sprite.svg#icon-menu"></use>
-      </svg>
-    </button>
-    <button class="header__icon header__icon--close header__icon--close--hidden" aria-label="close mobile menu">
-      <svg class="icon">
-        <use xlink:href="./images/sprite.svg#icon-close"></use>
-      </svg>
-    </button>
+        <button
+          class="header__icon header__icon--menu"
+          aria-label="open mobile menu."
+        >
+          <svg class="icon">
+            <use xlink:href="./images/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <button
+          class="header__icon header__icon--close header__icon--close--hidden"
+          aria-label="close mobile menu."
+        >
+          <svg class="icon">
+            <use xlink:href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
     </header>
+
+    <!-- mobile header navigation -->
+    <nav
+      class="mobile__header"
+      aria-label="main navigation mobile."
+      role="navigation"
+      data-expanded="false"
+    >
+      <ul class="mobile__header__navigations">
+        <li class="mobile__header__nav">
+          <a href="#section--home" class="header__link">Home</a>
+        </li>
+        <li class="mobile__header__nav">
+          <a href="#section--features" class="header__link">Features</a>
+        </li>
+        <li class="mobile__header__nav">
+          <a href="#section--blog" class="header__link">Blog</a>
+        </li>
+        <li class="mobile__header__nav">
+          <a href="#section--contactus" class="header__link">Support</a>
+        </li>
+      </ul>
+    </nav>
   </body>
 </html>

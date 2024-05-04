@@ -105,7 +105,9 @@
     }
   }
 
-  &__icon {
+  &__icon,
+  svg {
+    @include flex-center;
     transition: transform var(--transition-timing-2)
       cubic-bezier(0.075, 0.82, 0.165, 1);
     &:hover {
@@ -162,6 +164,10 @@
     @include responsive(desktop-small) {
       letter-spacing: normal;
       padding: var(--space-8) var(--space-11);
+    }
+
+    @include responsive(tabs) {
+      padding: var(--space-5) var(--space-11);
     }
     &:hover {
       box-shadow: var(--box-shadow-all-side);

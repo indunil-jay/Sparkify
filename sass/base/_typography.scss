@@ -24,3 +24,8 @@ ul {
 button {
   all: unset;
 }
+
+button:focus-visible {
+  outline: 1px solid var(--color--primary-600);
+  @include flex-center;
+}
