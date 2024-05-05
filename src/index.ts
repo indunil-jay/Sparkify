@@ -1,3 +1,4 @@
+import { renderDesktopNavigation } from "./components/desktopnav";
 import { handleHover, handleToggleClick } from "./components/header";
 import { renderMobileNavigation } from "./components/mobilenav";
 
@@ -19,3 +20,5 @@ headerParent.addEventListener("mouseout", (e: Event) => handleHover(e, 1));
 
 //render navigation dynamically
 renderMobileNavigation();
+//render dekstop dynamically
+renderDesktopNavigation();
