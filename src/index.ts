@@ -1,4 +1,5 @@
 import { handleHover, handleToggleClick } from "./components/header";
+import { renderMobileNavigation } from "./components/mobilenav";
 
 export const toggleOpenBtn = document.querySelector<HTMLButtonElement>(
   ".header__icon--menu"
@@ -15,3 +16,6 @@ toggleCloseBtn.addEventListener("click", handleToggleClick);
 //menu fade
 headerParent.addEventListener("mouseover", (e: Event) => handleHover(e, 0.5));
 headerParent.addEventListener("mouseout", (e: Event) => handleHover(e, 1));
+
+//render navigation dynamically
+renderMobileNavigation();
