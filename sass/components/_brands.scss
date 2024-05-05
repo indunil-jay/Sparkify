@@ -1,0 +1,28 @@
+.brands {
+  box-shadow: var(--box-shadow-bottom);
+
+  &__container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    overflow: hidden;
+  }
+
+  &__brand {
+    padding: 2rem 6rem;
+    cursor: pointer;
+    margin-bottom: 8rem;
+  }
+
+  &__icon {
+    width: 7rem;
+    height: 7rem;
+    fill: var(--color-grey);
+  }
+}
