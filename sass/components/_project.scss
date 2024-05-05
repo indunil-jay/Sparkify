@@ -1,6 +1,4 @@
 .projects {
-  margin-bottom: 20rem;
-
   &__tabBtnsContainer {
     @include flex-center;
     flex-direction: column;
@@ -21,6 +19,7 @@
     @include responsive(mobile-md) {
       display: grid;
       grid-template-columns: repeat(2, minmax(min-content, 1fr));
+      gap: var(--space-8);
       border-radius: none;
       box-shadow: none;
     }
