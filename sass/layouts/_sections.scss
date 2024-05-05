@@ -29,4 +29,40 @@
       margin-top: 50rem;
     }
   }
+
+  &__team {
+    margin-top: 20rem;
+    background-color: var(--color-white);
+    grid-column: center-start / center-end;
+  }
+
+  &__details {
+    margin-bottom: var(--space-17);
+  }
+
+  &__textGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: var(--space-5);
+    width: 55%;
+
+    @include responsive(mobile-lg) {
+      width: 90%;
+    }
+  }
+
+  &__text {
+    color: var(--color-grey);
+    width: 55%;
+
+    @include responsive(mobile-lg) {
+      width: 90%;
+    }
+  }
 }
