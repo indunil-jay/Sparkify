@@ -36,6 +36,12 @@
     grid-column: center-start / center-end;
   }
 
+  &__offers {
+    margin-top: 20rem;
+    background-color: var(--color-white);
+    grid-column: center-start / center-end;
+  }
+
   &__details {
     margin-bottom: var(--space-17);
   }
