@@ -1,14 +1,14 @@
 .footer {
-  grid-column: full-start / full-end;
-  padding-inline: 2rem;
+  grid-column: center-start / center-end;
+  padding-inline: var(--space-10);
 
   &__container {
     display: grid;
     grid-template-columns: 2fr repeat(3, 1fr) 1.5fr;
-    padding: 8rem 2rem;
+    padding: var(--space-22) var(--space-10);
 
-    @include responsive(mobile) {
-      padding: 6rem 1rem;
+    @include responsive(tabs) {
+      padding: var(--space-19) var(--space-5);
     }
   }
 
@@ -17,7 +17,7 @@
     flex-direction: column;
     align-items: start;
 
-    @include responsive(mobile) {
+    @include responsive(tabs) {
       grid-column: 1/-1;
       justify-self: center;
       align-items: center;
@@ -28,7 +28,7 @@
     text-align: left;
     width: 80%;
 
-    @include responsive(mobile) {
+    @include responsive(tabs) {
       text-align: center;
       width: 80%;
     }
@@ -37,7 +37,7 @@
   &__listHeader {
     font-weight: 400;
     font-size: 2.4rem;
-    margin-bottom: 3rem;
+    margin-bottom: var(--space-13);
   }
 
   &__list {
@@ -45,35 +45,35 @@
   }
 
   &__item {
-    margin-top: 1rem;
+    margin-top: var(--space-5);
   }
   &__link,
   &__link:active,
   &__link:link {
     color: var(--color-grey);
-    transition: var(--transition-time-4);
+    transition: color var(--transition-timing-2) ease-in;
 
     &:hover {
-      color: var(--color-primary);
+      color: var(--color--primary-600);
     }
   }
   &__news__text {
     width: 70%;
 
-    @include responsive(mobile) {
+    @include responsive(tabs) {
       text-align: center;
       width: 100%;
     }
   }
 
   &__inputContainer {
-    position: relative;
-    margin-top: 2rem;
+    position: relative !important;
+    margin-top: var(--space-10);
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    @include responsive(mobile) {
+    @include responsive(tabs) {
       align-items: center;
     }
   }
@@ -84,10 +84,11 @@
     border-radius: 10px;
     width: 90%;
     border: 1px solid var(--color-grey);
+    background-color: transparent;
 
     &:focus {
       outline: none;
-      border: 1px solid var(--color-primary);
+      border: 1px solid var(--color--primary-600);
     }
 
     &::-webkit-input-placeholder {
@@ -96,7 +97,7 @@
       font-size: inherit;
       font-weight: 400;
     }
-    @include responsive(mobile) {
+    @include responsive(tabs) {
       width: 70%;
     }
   }
@@ -104,10 +105,19 @@
   &__icon {
     position: absolute;
     right: 40px;
-    fill: var(--color-grey);
+    fill: var(--color--primary-600);
 
-    @include responsive(mobile) {
-      right: 50px;
+    @include responsive(tabs) {
+      right: 150px;
+    }
+    @include responsive(mobile-lg) {
+      right: 120px;
+    }
+    @include responsive(mobile-md) {
+      right: 85px;
+    }
+    @include responsive(mobile-sm) {
+      right: 60px;
     }
   }
 
@@ -116,28 +126,33 @@
     justify-content: space-between;
     align-items: center;
     border-top: 3px solid var(--color-grey--light-1);
-    padding: 2rem 4rem;
+    padding: var(--space-10) var(--space-15);
+
+    @include responsive(mobile-lg) {
+      flex-direction: column;
+      gap: var(--space-10);
+    }
   }
 
   &__linkContainer {
     ul {
       @include flex-center;
-      gap: 4rem;
+      gap: var(--space-15);
     }
   }
 
   &__newsletter {
-    @include responsive(mobile) {
+    @include responsive(tabs) {
       grid-column: 1/-1;
       text-align: center;
-      margin-top: 3rem;
+      margin-top: var(--space-13);
     }
   }
 
   &__support,
   &__services,
   &__quickLinks {
-    @include responsive(mobile) {
+    @include responsive(tabs) {
       grid-column: 1/-1;
       text-align: center;
     }
