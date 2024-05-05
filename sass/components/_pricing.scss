@@ -48,6 +48,7 @@
     padding-block: var(--space-md-2);
     border-radius: var(--space-13);
     box-shadow: var(--box-shadow-all-side);
+    animation: bounce-bottom 0.5s ease-out normal both;
 
     @include responsive(desktop-small) {
       max-width: 32rem;

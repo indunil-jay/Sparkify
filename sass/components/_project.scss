@@ -43,6 +43,7 @@
     grid-template-rows: repeat(2, 26rem);
     grid-gap: var(--space-13);
     padding: var(--space-10);
+    animation: slide-in-top 0.5s ease-out normal both;
 
     @include responsive(mobile-lg) {
       display: flex;

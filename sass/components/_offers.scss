@@ -26,6 +26,8 @@
     padding: var(--space-15);
     transition: box-shadow 0.2s ease-in;
 
+    animation: jello-horizontal 0.5s ease-out normal both;
+
     @include responsive(desktop-small) {
       width: 32rem;
       padding: var(--space-13);

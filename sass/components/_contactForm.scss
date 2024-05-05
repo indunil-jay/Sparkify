@@ -16,6 +16,7 @@
     flex-direction: column;
     justify-content: space-between;
 
+    animation: slide-in-left 0.5s ease-out normal both;
     @include responsive(tabs) {
       grid-template-columns: repeat(2, 1fr);
       align-items: center;
@@ -85,7 +86,7 @@
   &__form {
     padding: 4rem;
     box-shadow: var(--box-shadow-all-side);
-
+    animation: slide-in-right 0.5s ease-out normal both;
     &__row {
       display: grid;
       grid-template-columns: 1fr 1fr;

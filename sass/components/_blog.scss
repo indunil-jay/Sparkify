@@ -20,6 +20,7 @@
     box-shadow: var(--box-shadow-all-side);
     overflow: hidden;
     cursor: pointer;
+    animation: slide-in-left 0.5s ease-out normal both;
     @include responsive(desktop-small) {
       width: 32rem;
     }
