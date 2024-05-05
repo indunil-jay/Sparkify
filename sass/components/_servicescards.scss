@@ -4,7 +4,7 @@
   grid-template-rows: auto;
   grid-gap: var(--space-13);
   height: 12rem;
-  margin-top: -4rem;
+  margin-top: 4rem;
   position: relative;
   z-index: 99;
 
@@ -24,6 +24,7 @@
     border: 1px solid var(--color--primary-200);
     box-shadow: var(--box-shadow-bottom);
     cursor: pointer;
+    animation: fade-in-fwd 0.5s ease-in 1 normal both;
 
     @include responsive(tabs) {
       height: 14rem;

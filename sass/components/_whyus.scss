@@ -14,6 +14,7 @@
     flex-direction: column;
     justify-content: center;
     padding: var(--space-8) var(--space-13);
+    animation: slide-in-right 0.5s ease-out 1 normal both;
 
     @include responsive(tabs) {
       order: 1;
@@ -43,6 +44,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(7, 1fr);
     grid-gap: var(--space-5);
+    animation: slide-in-left 0.5s ease-out 1 normal both;
 
     @include responsive(tabs) {
       order: 2;
