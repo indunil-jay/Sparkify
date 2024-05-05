@@ -4,6 +4,10 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+
+    @include responsive(mobile-lg) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
   &__box {
     @include flex-center;

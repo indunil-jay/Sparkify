@@ -21,6 +21,10 @@
       align-items: center;
       box-shadow: none;
     }
+
+    @include responsive(mobile-md) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__data {

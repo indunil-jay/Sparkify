@@ -1,6 +1,7 @@
 .brands {
-  box-shadow: var(--box-shadow-bottom);
-
+  @include responsive(mobile-lg) {
+    display: none;
+  }
   &__container {
     width: 90%;
     margin: 0 auto;
