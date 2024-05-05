@@ -20,4 +20,13 @@
     background-color: var(--color-white);
     grid-column: center-start / center-end;
   }
+  &__whyus {
+    margin-top: 20rem;
+    background-color: var(--color-white);
+    grid-column: center-start / center-end;
+
+    @include responsive(tabs) {
+      margin-top: 50rem;
+    }
+  }
 }

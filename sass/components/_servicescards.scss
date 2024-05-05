@@ -69,7 +69,7 @@
 
   &__text {
     padding-right: 6rem;
-
+    color: var(--color-grey);
     @include responsive(desktop-small) {
       padding-right: 2;
     }
