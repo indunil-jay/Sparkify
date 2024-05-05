@@ -2,6 +2,8 @@ import { renderDesktopNavigation } from "./components/desktopnav";
 import { handleHover, handleToggleClick } from "./components/header";
 import { renderMasnoryGallery } from "./components/masonryGallery";
 import { renderMobileNavigation } from "./components/mobilenav";
+import { renderPriceCards } from "./components/priceCard";
+import { renderTeamCards } from "./components/teamcards";
 
 export const toggleOpenBtn = document.querySelector<HTMLButtonElement>(
   ".header__icon--menu"
@@ -25,3 +27,7 @@ renderMobileNavigation();
 renderDesktopNavigation();
 //render masnory gallery in hero
 renderMasnoryGallery();
+//render team members cards
+renderTeamCards();
+//render price cards
+renderPriceCards();
