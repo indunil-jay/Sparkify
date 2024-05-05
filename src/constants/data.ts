@@ -1,4 +1,12 @@
-import { NavigationTypes } from "./types";
+import {
+  msgallery1,
+  msgallery2,
+  msgallery3,
+  msgallery4,
+  msgallery5,
+  msgallery6,
+} from "../../images";
+import { MasonryGalleryType, NavigationTypes } from "./types";
 
 export const navigation: NavigationTypes[] = [
   {
@@ -32,5 +40,38 @@ export const navigation: NavigationTypes[] = [
     name: "sign up",
     url: "/#sign-up",
     isMobile: true,
+  },
+];
+
+export const masonaryGallery: MasonryGalleryType[] = [
+  {
+    id: 1,
+    imagePath: msgallery3,
+    name: "mansory gallary image-1",
+  },
+  {
+    id: 2,
+    imagePath: msgallery5,
+    name: "mansory gallary image-2",
+  },
+  {
+    id: 3,
+    imagePath: msgallery6,
+    name: "mansory gallary image-3",
+  },
+  {
+    id: 4,
+    imagePath: msgallery4,
+    name: "mansory gallary image-4",
+  },
+  {
+    id: 5,
+    imagePath: msgallery2,
+    name: "mansory gallary image-5",
+  },
+  {
+    id: 4,
+    imagePath: msgallery1,
+    name: "mansory gallary image-6",
   },
 ];

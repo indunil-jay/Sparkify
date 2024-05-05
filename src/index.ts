@@ -1,5 +1,6 @@
 import { renderDesktopNavigation } from "./components/desktopnav";
 import { handleHover, handleToggleClick } from "./components/header";
+import { renderMasnoryGallery } from "./components/masonryGallery";
 import { renderMobileNavigation } from "./components/mobilenav";
 
 export const toggleOpenBtn = document.querySelector<HTMLButtonElement>(
@@ -22,3 +23,5 @@ headerParent.addEventListener("mouseout", (e: Event) => handleHover(e, 1));
 renderMobileNavigation();
 //render dekstop dynamically
 renderDesktopNavigation();
+//render masnory gallery in hero
+renderMasnoryGallery();

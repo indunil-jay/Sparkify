@@ -4,3 +4,9 @@ export type NavigationTypes = {
   url: string;
   isMobile?: boolean;
 };
+
+export type MasonryGalleryType = {
+  id: number;
+  imagePath: string;
+  name: string;
+};
