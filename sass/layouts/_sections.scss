@@ -14,5 +14,6 @@
   &__hero {
     background-color: var(--color-white);
     grid-column: center-start / center-end;
+    position: relative;
   }
 }

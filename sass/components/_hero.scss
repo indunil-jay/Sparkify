@@ -9,13 +9,20 @@
   }
   @include responsive(tabs) {
     grid-template-columns: 1fr;
+    background: rgb(42, 54, 216);
+    background: linear-gradient(
+      135deg,
+      rgba(42, 54, 216, 1) 0%,
+      rgba(78, 107, 255, 1) 35%,
+      rgba(117, 150, 255, 1) 100%
+    );
+    clip-path: polygon(0 0, 100% 0%, 100% 82%, 0% 100%);
   }
 
   &__details {
-    background-color: var(--color-white);
-    background-color: blue;
+    // background-color: var(--color-white);
     @include flex-center;
-
+    z-index: 1;
     @include responsive(mobile-md) {
       align-items: start;
       padding-top: 10rem;
@@ -25,6 +32,7 @@
   &__details__box {
     @include responsive(tabs) {
       padding-inline: var(--space-17);
+      color: var(--color-white);
     }
     @include responsive(mobile-md) {
       padding-inline: var(--space-10);
@@ -51,6 +59,7 @@
       text-align: center;
       width: 70%;
       margin: var(--space-13) auto;
+      color: var(--color-white);
     }
     @include responsive(mobile-lg) {
       width: 90%;
@@ -76,6 +85,15 @@
     @include responsive(mobile-md) {
       order: 2;
     }
+    @include responsive(tabs) {
+      background-color: var(--color--primary-100);
+      color: var(--color--primary-800);
+
+      &:hover {
+        color: var(--color--primary-900);
+        background-color: var(--color-white);
+      }
+    }
   }
   &__call {
     display: flex;
@@ -98,6 +116,9 @@
     @include responsive(mobile-md) {
       margin: 0;
     }
+    @include responsive(tabs) {
+      color: var(--color-white);
+    }
   }
   &__arrow {
     margin-left: 1rem;
@@ -108,7 +129,7 @@
   }
   &__gallery {
     @include flex-center;
-
+    z-index: 1;
     @include responsive(tabs) {
       display: none;
     }
