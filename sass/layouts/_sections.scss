@@ -64,6 +64,10 @@
     margin-top: 20rem;
     background-color: var(--color-white);
     grid-column: center-start / center-end;
+
+    @include responsive(tabs) {
+      display: none;
+    }
   }
   &__blog {
     margin-top: 20rem;
