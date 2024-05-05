@@ -1,0 +1,125 @@
+.blog {
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 36rem);
+    grid-gap: var(--space-13);
+    justify-content: center;
+
+    @include responsive(desktop-small) {
+      grid-template-columns: repeat(3, 32rem);
+      grid-gap: var(--space-11);
+    }
+    @include responsive(desktop-small) {
+      grid-template-columns: repeat(1, 36rem);
+    }
+  }
+
+  &__card {
+    width: 36rem;
+    border-radius: var(--space-5);
+    box-shadow: var(--box-shadow-all-side);
+    overflow: hidden;
+    cursor: pointer;
+    @include responsive(desktop-small) {
+      width: 32rem;
+    }
+    @include responsive(desktop-small) {
+      width: 36rem;
+    }
+  }
+
+  &__header {
+    width: 100%;
+    height: 24rem;
+    position: relative;
+    @include flex-center;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: var(--color--primary-900);
+      opacity: 0.3;
+      width: 100%;
+      bottom: 0;
+      height: 0%;
+
+      transition: var(--transition-timing-8);
+    }
+
+    &:hover::after {
+      height: 100%;
+    }
+  }
+
+  &__photo {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    img {
+      @include image-fit;
+      border-top-left-radius: var(--space-5);
+      border-top-right-radius: var(--space-5);
+      transition: var(--transition-timing-8);
+      &:hover {
+        filter: blur(5px);
+      }
+    }
+  }
+  &__details {
+    padding: var(--space-10);
+  }
+  &__author {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--space-11);
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: var(--space-5);
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2.2rem;
+    stroke: var(--color-grey);
+  }
+
+  &__text {
+    font-size: var(--font-size-default);
+    color: var(--color-grey);
+    font-weight: 500;
+  }
+
+  &__link-h3 {
+    text-transform: capitalize;
+  }
+  &__link:visited,
+  &__link:active {
+    color: var(--color--primary-900);
+    transition: var(--transition-timing-3);
+
+    &:hover {
+      color: var(--color--primary-800);
+    }
+  }
+
+  &__btn {
+    padding: var(--space-7) var(--space-13);
+    position: absolute;
+    transition: var(--transition-timing-3);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 999;
+    &:hover {
+      background-color: var(--color-red);
+    }
+  }
+
+  &__header:hover &__btn {
+    visibility: visible;
+    opacity: 1;
+  }
+}
