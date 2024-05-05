@@ -1,0 +1,80 @@
+.service {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: var(--space-13);
+  height: 12rem;
+  margin-top: -4rem;
+  position: relative;
+  z-index: 99;
+
+  @include responsive(tabs) {
+    grid-template-columns: 1fr;
+
+    margin-top: 2rem;
+  }
+
+  &__card {
+    display: flex;
+    align-items: center;
+    gap: var(--space-10);
+    padding: var(--space-4) var(--space-8);
+    background-color: var(--color-white);
+    border-radius: 10px;
+    border: 1px solid var(--color--primary-200);
+    box-shadow: var(--box-shadow-bottom);
+    cursor: pointer;
+
+    @include responsive(tabs) {
+      height: 14rem;
+      max-width: 50rem;
+      margin: 0 auto;
+    }
+
+    &:hover {
+      box-shadow: var(--box-shadow-all-side);
+    }
+  }
+
+  &__card__left {
+    @include flex-center;
+  }
+  &__card__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__card__icon-wrapper {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+
+    @include flex-center;
+
+    &--1 {
+      background-color: var(--color-red);
+    }
+    &--2 {
+      background-color: var(--color-green);
+    }
+    &--3 {
+      background-color: var(--color-orange);
+    }
+  }
+
+  &__card__icon {
+    fill: var(--color-white);
+  }
+
+  &__text {
+    padding-right: 6rem;
+
+    @include responsive(desktop-small) {
+      padding-right: 2;
+    }
+  }
+
+  &__heading {
+  }
+}

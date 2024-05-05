@@ -16,4 +16,8 @@
     grid-column: center-start / center-end;
     position: relative;
   }
+  &__services {
+    background-color: var(--color-white);
+    grid-column: center-start / center-end;
+  }
 }

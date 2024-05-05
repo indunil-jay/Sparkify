@@ -41,6 +41,11 @@ ul {
   }
 }
 
+.heading--3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
 .paragraph--1 {
   font-size: var(--font-size-smd);
   font-weight: 400;
@@ -53,4 +58,10 @@ ul {
   @include responsive(mobile-lg) {
     font-size: 1.4rem;
   }
+}
+
+.paragraph--2 {
+  font-size: var(--font-size-default);
+  font-weight: 400;
+  line-height: 1.5;
 }
