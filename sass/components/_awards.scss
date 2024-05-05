@@ -1,0 +1,17 @@
+.bannerClients {
+  &__container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  &__box {
+    @include flex-center;
+    flex-direction: column;
+    height: 24rem;
+    color: var(--color-grey);
+  }
+  &__client-number {
+    color: var(--color--primary-500);
+  }
+}

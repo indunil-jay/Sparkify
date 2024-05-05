@@ -56,6 +56,11 @@
     background-color: var(--color-white);
     grid-column: center-start / center-end;
   }
+  &__bannerClients {
+    margin-top: 20rem;
+    background-color: var(--color-white);
+    grid-column: center-start / center-end;
+  }
 
   &__details {
     margin-bottom: var(--space-17);
