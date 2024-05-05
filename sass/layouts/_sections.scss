@@ -73,6 +73,12 @@
   }
   &__contact {
     margin-top: 20rem;
+
+    background-color: var(--color-white);
+    grid-column: center-start / center-end;
+  }
+  &__banner {
+    margin-top: 20rem;
     margin-bottom: 20rem;
     background-color: var(--color-white);
     grid-column: center-start / center-end;
