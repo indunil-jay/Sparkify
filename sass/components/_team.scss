@@ -7,7 +7,7 @@
     justify-content: center;
     overflow: hidden;
 
-    @include responsive(mobile-lg) {
+    @include responsive(tabs) {
       grid-template-columns: 1fr;
       grid-gap: var(--space-13);
       margin: 0 auto;

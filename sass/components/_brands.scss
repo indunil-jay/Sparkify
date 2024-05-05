@@ -1,5 +1,5 @@
 .brands {
-  @include responsive(mobile-lg) {
+  @include responsive(tabs) {
     display: none;
   }
   &__container {

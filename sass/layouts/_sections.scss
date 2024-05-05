@@ -1,6 +1,5 @@
 .main {
   grid-column: full-start / full-end;
-  padding-inline: 1rem;
   display: grid;
   grid-template-columns:
     [full-start] 1fr [center-start] repeat(
