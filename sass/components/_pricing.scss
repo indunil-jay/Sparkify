@@ -1,0 +1,105 @@
+.pricing {
+  margin-bottom: 20rem; //remove later
+  &__toggle {
+    margin: 0 auto;
+    max-width: 36rem;
+    background-color: var(--color--white);
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    border-radius: var(--space-17);
+    margin-bottom: var(--space-13);
+    margin-top: -3rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+    span {
+      font-size: 2rem;
+      font-weight: 500;
+      padding: var(--space-4) var(--space-10);
+      width: 100%;
+      border-radius: var(--space-17);
+    }
+    &--active {
+      background-color: var(--color--primary-500);
+      color: var(--color-white);
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 36rem);
+    grid-gap: var(--space-8);
+    justify-content: center;
+
+    @include responsive(desktop-small) {
+      grid-template-columns: repeat(3, 32rem);
+    }
+    @include responsive(tabs) {
+      grid-template-columns: repeat(1, 36rem);
+    }
+  }
+
+  &__card {
+    @include flex-center;
+    overflow-x: hidden;
+    flex-direction: column;
+    max-width: 36rem;
+    min-height: 48rem;
+    background-color: var(--color-white);
+    padding-block: var(--space-md-2);
+    border-radius: var(--space-13);
+    box-shadow: var(--box-shadow-all-side);
+
+    @include responsive(desktop-small) {
+      max-width: 32rem;
+    }
+    @include responsive(desktop-small) {
+      max-width: 36rem;
+    }
+
+    &__per {
+      color: var(--color-grey);
+    }
+
+    &__text {
+      color: var(--color-grey);
+    }
+
+    &__num {
+      font-size: var(--font-size-lg);
+      font-weight: 600;
+    }
+    &__package {
+      @include flex-center;
+      margin-bottom: var(--space-8);
+    }
+
+    &__data,
+    &__details {
+      @include flex-center;
+      flex-direction: column;
+      gap: var(--space-5);
+    }
+
+    &__data:last-child {
+      margin-top: var(--space-8);
+    }
+
+    &__btn {
+      padding: var(--space-6) var(--space-15);
+      border-radius: var(--space-17);
+      transition: background-color 0.2s ease-in;
+
+      &--green {
+        background-color: var(--color-green);
+      }
+      &--orange {
+        background-color: var(--color-orange);
+      }
+
+      &:hover {
+        background-color: var(--color-red);
+      }
+    }
+  }
+}

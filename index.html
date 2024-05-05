@@ -1,266 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sparkify</title>
-    <link
-      rel="shortcut icon"
-      href="./images/logos/sparkify-logo-sm.png"
-      type="image/png"
-    />
-    <link rel="stylesheet" href="./sass/main.scss" />
-    <script type="module" defer src="./src/index.ts"></script>
-  </head>
-  <body class="container">
-    <!--header -->
-    <header class="header" aria-label="header">
-      <!-- logo left -->
-      <div class="header__left">
-        <a
-          href="/"
-          class="header__logo"
-          aria-roledescription="company logo work as button to navigate home."
-          role="navigation"
-        >
-          <span class="header__logoName">Sparkify</span>
-          <div class="header__logoPicture">
-            <img
-              src="./images/logos/sparkify-logo-sm.png"
-              alt="sparkify  company logo."
-            />
-          </div>
-        </a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sparkify</title>
+  <link rel="shortcut icon" href="./images/logos/sparkify-logo-sm.png" type="image/png" />
+  <link rel="stylesheet" href="./sass/main.scss" />
+  <script type="module" defer src="./src/index.ts"></script>
+</head>
+
+<body class="container">
+  <!--header -->
+  <header class="header" aria-label="header">
+    <!-- logo left -->
+    <div class="header__left">
+      <a href="/" class="header__logo" aria-roledescription="company logo work as button to navigate home."
+        role="navigation">
+        <span class="header__logoName">Sparkify</span>
+        <div class="header__logoPicture">
+          <img src="./images/logos/sparkify-logo-sm.png" alt="sparkify  company logo." />
+        </div>
+      </a>
+    </div>
+    <!-- navigation middle -->
+    <nav class="header__middle" aria-label="main navigation." role="navigation">
+      <ul class="header__navigations">
+        <li class="header__nav">
+          <a href="#section--home" class="header__link">Home</a>
+        </li>
+        <li class="header__nav">
+          <a href="#section--features" class="header__link">Features</a>
+        </li>
+        <li class="header__nav">
+          <a href="#section--blog" class="header__link">Blog</a>
+        </li>
+        <li class="header__nav">
+          <a href="#section--contactus" class="header__link">Support</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- right -->
+    <div class="header__right">
+      <button class="header__icon header__icon--sun header__icon--sun--active" aria-label="theme-toggler-light.">
+        <svg class="icon">
+          <use xlink:href="./images/sprite.svg#icon-sun"></use>
+        </svg>
+      </button>
+
+      <button class="header__icon header__icon--moon header__icon--moon--hidden" aria-label="theme-toggler-dark.">
+        <svg class="icon">
+          <use xlink:href="./images/sprite.svg#icon-moon"></use>
+        </svg>
+      </button>
+
+      <div class="header__btn-container" aria-label="header buttons container.">
+        <a href="#" class="header__btn btn--border">Sign in</a>
+        <a href="#" class="header__btn btn--fill">Sign up</a>
       </div>
-      <!-- navigation middle -->
-      <nav
-        class="header__middle"
-        aria-label="main navigation."
-        role="navigation"
-      >
-        <ul class="header__navigations">
-          <li class="header__nav">
-            <a href="#section--home" class="header__link">Home</a>
-          </li>
-          <li class="header__nav">
-            <a href="#section--features" class="header__link">Features</a>
-          </li>
-          <li class="header__nav">
-            <a href="#section--blog" class="header__link">Blog</a>
-          </li>
-          <li class="header__nav">
-            <a href="#section--contactus" class="header__link">Support</a>
-          </li>
-        </ul>
-      </nav>
 
-      <!-- right -->
-      <div class="header__right">
-        <button
-          class="header__icon header__icon--sun header__icon--sun--active"
-          aria-label="theme-toggler-light."
-        >
-          <svg class="icon">
-            <use xlink:href="./images/sprite.svg#icon-sun"></use>
-          </svg>
-        </button>
+      <button class="header__icon header__icon--menu header__icon--close--active" aria-label="open mobile menu.">
+        <svg class="icon">
+          <use xlink:href="./images/sprite.svg#icon-menu "></use>
+        </svg>
+      </button>
+      <button class="header__icon header__icon--close header__icon--close--hidden" aria-label="close mobile menu.">
+        <svg class="icon">
+          <use xlink:href="./images/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+  </header>
 
-        <button
-          class="header__icon header__icon--moon header__icon--moon--hidden"
-          aria-label="theme-toggler-dark."
-        >
-          <svg class="icon">
-            <use xlink:href="./images/sprite.svg#icon-moon"></use>
-          </svg>
-        </button>
-
-        <div
-          class="header__btn-container"
-          aria-label="header buttons container."
-        >
-          <a href="#" class="header__btn btn--border">Sign in</a>
-          <a href="#" class="header__btn btn--fill">Sign up</a>
+  <!-- main -->
+  <main class="main">
+    <section class="section__hero">
+      <div class="hero">
+        <div class="hero__details">
+          <div class="hero__details__box">
+            <h1 class="heading--1 hero__heading">
+              We Specialize In UI/UX, Web Development, Digital Marketing
+            </h1>
+            <p class="paragraph--1 hero__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Nostrum numquam aspernatur deleniti harum iure, excepturi
+              quidem, eaque pariatur qui eligendi nesciunt voluptatibus
+              obcaecati similique necessitatibus.
+            </p>
+            <div class="hero__cta">
+              <a href="#" class="hero__callbtn btn--fill btn--primary">
+                Get start Now
+                <span class="hero__arrow"> &rarr;</span>
+              </a>
+              <div class="hero__call">
+                <span class="hero__callNumber">Call us (0123) 456 - 789</span>
+                <span class="hero__callText">For any question or concern</span>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <button
-          class="header__icon header__icon--menu header__icon--close--active"
-          aria-label="open mobile menu."
-        >
-          <svg class="icon">
-            <use xlink:href="./images/sprite.svg#icon-menu "></use>
-          </svg>
-        </button>
-        <button
-          class="header__icon header__icon--close header__icon--close--hidden"
-          aria-label="close mobile menu."
-        >
-          <svg class="icon">
-            <use xlink:href="./images/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
+        <div class="hero__gallery">
+          <div class="hero__masonary" aria-label="mansory grid gallery">
+            <div class="hero__image__box">
+              <img src="./images/hero-gallery/3.jpg" alt="mansory gallary image-1" />
+            </div>
+            <div class="hero__image__box">
+              <img src="./images/hero-gallery/5.jpg" alt="mansory gallary image-2" />
+            </div>
+            <div class="hero__image__box">
+              <img src="./images/hero-gallery/6.jpg" alt="mansory gallary image-3" />
+            </div>
+            <div class="hero__image__box">
+              <img src="./images/hero-gallery/4.jpg" alt="mansory gallary image-4" />
+            </div>
+            <div class="hero__image__box">
+              <img src="./images/hero-gallery/2.jpg" alt="mansory gallary image-5" />
+            </div>
+            <div class="hero__image__box">
+              <img src="./images/hero-gallery/1.jpg" alt="mansory gallary image-6" />
+            </div>
+          </div>
+        </div>
       </div>
-    </header>
-
-    <!-- main -->
-    <main class="main">
-      <section class="section__hero">
-        <div class="hero">
-          <div class="hero__details">
-            <div class="hero__details__box">
-              <h1 class="heading--1 hero__heading">
-                We Specialize In UI/UX, Web Development, Digital Marketing
-              </h1>
-              <p class="paragraph--1 hero__text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Nostrum numquam aspernatur deleniti harum iure, excepturi
-                quidem, eaque pariatur qui eligendi nesciunt voluptatibus
-                obcaecati similique necessitatibus.
-              </p>
-              <div class="hero__cta">
-                <a href="#" class="hero__callbtn btn--fill btn--primary">
-                  Get start Now
-                  <span class="hero__arrow"> &rarr;</span>
-                </a>
-                <div class="hero__call">
-                  <span class="hero__callNumber">Call us (0123) 456 - 789</span>
-                  <span class="hero__callText"
-                    >For any question or concern</span
-                  >
-                </div>
-              </div>
+    </section>
+    <section class="section__services">
+      <div class="service">
+        <div class="service__card">
+          <div class="service__card__left">
+            <div class="service__card__icon-wrapper service__card__icon-wrapper--1">
+              <svg class="icon service__card__icon">
+                <use xlink:href="./images/sprite.svg#icon-antena"></use>
+              </svg>
             </div>
           </div>
 
-          <div class="hero__gallery">
-            <div class="hero__masonary" aria-label="mansory grid gallery">
-              <div class="hero__image__box">
-                <img
-                  src="./images/hero-gallery/3.jpg"
-                  alt="mansory gallary image-1"
-                />
-              </div>
-              <div class="hero__image__box">
-                <img
-                  src="./images/hero-gallery/5.jpg"
-                  alt="mansory gallary image-2"
-                />
-              </div>
-              <div class="hero__image__box">
-                <img
-                  src="./images/hero-gallery/6.jpg"
-                  alt="mansory gallary image-3"
-                />
-              </div>
-              <div class="hero__image__box">
-                <img
-                  src="./images/hero-gallery/4.jpg"
-                  alt="mansory gallary image-4"
-                />
-              </div>
-              <div class="hero__image__box">
-                <img
-                  src="./images/hero-gallery/2.jpg"
-                  alt="mansory gallary image-5"
-                />
-              </div>
-              <div class="hero__image__box">
-                <img
-                  src="./images/hero-gallery/1.jpg"
-                  alt="mansory gallary image-6"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section__services">
-        <div class="service">
-          <div class="service__card">
-            <div class="service__card__left">
-              <div
-                class="service__card__icon-wrapper service__card__icon-wrapper--1"
-              >
-                <svg class="icon service__card__icon">
-                  <use xlink:href="./images/sprite.svg#icon-antena"></use>
-                </svg>
-              </div>
-            </div>
-
-            <div class="service__card__right">
-              <h3 class="heading--3 service__heading">24/7 Support</h3>
-              <p class="paragraph--2 service__text">
-                Lorem ipsum dolor sit amet conse adipiscing elit.
-              </p>
-            </div>
-          </div>
-
-          <div class="service__card">
-            <div class="service__card__left">
-              <div
-                class="service__card__icon-wrapper service__card__icon-wrapper--2"
-              >
-                <svg class="icon service__card__icon">
-                  <use xlink:href="./images/sprite.svg#icon-local_police"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="service__card__right">
-              <h3 class="heading--3 service__heading">Take Ownership</h3>
-              <p class="paragraph--2 service__text">
-                Lorem ipsum dolor sit amet conse adipiscing elit.
-              </p>
-            </div>
-          </div>
-
-          <div class="service__card">
-            <div class="service__card__left">
-              <div
-                class="service__card__icon-wrapper service__card__icon-wrapper--3"
-              >
-                <svg class="icon service__card__icon">
-                  <use xlink:href="./images/sprite.svg#icon-users"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="service__card__right">
-              <h3 class="heading--3 service__heading">Team Work</h3>
-              <p class="paragraph--2 service__text">
-                Lorem ipsum dolor sit amet conse adipiscing elit.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section__whyus">
-        <div class="whyus">
-          <div class="whyus__left">
-            <div class="whyus__picture whyus__picture--1">
-              <img src="./images/whyus/user-3.jpg" alt="grid-image-user1" />
-            </div>
-            <div class="whyus__picture whyus__picture--2">
-              <img src="./images/whyus/user-2.jpg" alt="grid-image-user2" />
-            </div>
-            <div class="whyus__picture whyus__picture--3">
-              <img src="./images/whyus/user-1.jpg" alt="grid-image-user3" />
-            </div>
-          </div>
-
-          <div class="whyus__right">
-            <p class="paragraph--2 whyus__text">why Choose Us</p>
-            <h2 class="heading--h2 whyus__header">
-              We Make Our customers happy by giving Best services.
-            </h2>
-            <p class="paragraph--2 whyus__paragraph">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum
+          <div class="service__card__right">
+            <h3 class="heading--3 service__heading">24/7 Support</h3>
+            <p class="paragraph--2 service__text">
+              Lorem ipsum dolor sit amet conse adipiscing elit.
             </p>
           </div>
         </div>
-      </section>
 
-         
+        <div class="service__card">
+          <div class="service__card__left">
+            <div class="service__card__icon-wrapper service__card__icon-wrapper--2">
+              <svg class="icon service__card__icon">
+                <use xlink:href="./images/sprite.svg#icon-local_police"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="service__card__right">
+            <h3 class="heading--3 service__heading">Take Ownership</h3>
+            <p class="paragraph--2 service__text">
+              Lorem ipsum dolor sit amet conse adipiscing elit.
+            </p>
+          </div>
+        </div>
+
+        <div class="service__card">
+          <div class="service__card__left">
+            <div class="service__card__icon-wrapper service__card__icon-wrapper--3">
+              <svg class="icon service__card__icon">
+                <use xlink:href="./images/sprite.svg#icon-users"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="service__card__right">
+            <h3 class="heading--3 service__heading">Team Work</h3>
+            <p class="paragraph--2 service__text">
+              Lorem ipsum dolor sit amet conse adipiscing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__whyus">
+      <div class="whyus">
+        <div class="whyus__left">
+          <div class="whyus__picture whyus__picture--1">
+            <img src="./images/whyus/user-3.jpg" alt="grid-image-user1" />
+          </div>
+          <div class="whyus__picture whyus__picture--2">
+            <img src="./images/whyus/user-2.jpg" alt="grid-image-user2" />
+          </div>
+          <div class="whyus__picture whyus__picture--3">
+            <img src="./images/whyus/user-1.jpg" alt="grid-image-user3" />
+          </div>
+        </div>
+
+        <div class="whyus__right">
+          <p class="paragraph--2 whyus__text">why Choose Us</p>
+          <h2 class="heading--h2 whyus__header">
+            We Make Our customers happy by giving Best services.
+          </h2>
+          <p class="paragraph--2 whyus__paragraph">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The
+            point of using Lorem Ipsum
+          </p>
+        </div>
+      </div>
+    </section>
+
+
     <section class="section__team">
       <div class="team">
         <div class="section__details">
@@ -304,14 +250,14 @@
         </div>
     </section>
 
-     
+
     <section class="section__offers">
       <div class="offers">
 
-         <div class="section__details">
+        <div class="section__details">
           <div class="section__textGroup">
             <h2 class="heading--h2 section__title">
-           We Offer The Best Quality Service For You.
+              We Offer The Best Quality Service For You.
             </h2>
             <p class="paragraph--2 section__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
@@ -329,7 +275,7 @@
                 <use xlink:href="./images/sprite.svg#icon-bars"></use>
               </svg>
               <h3 class="heading--3 offers__heading">Crafted for Startups</h3>
-              <p class="paragraph paragraph--p3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis
+              <p class="paragraph--2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis
                 tortor.</p>
             </div>
           </div>
@@ -340,7 +286,7 @@
                 <use xlink:href="./images/sprite.svg#icon-stack"></use>
               </svg>
               <h3 class="heading--3 offers__heading">High-quality Design</h3>
-              <p class="paragraph paragraph--p3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis
+              <p class="paragraph--2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis
                 tortor.</p>
             </div>
           </div>
@@ -351,7 +297,7 @@
                 <use xlink:href="./images/sprite.svg#icon-power"></use>
               </svg>
               <h3 class="heading--3 offers__heading">All Essential Sections</h3>
-              <p class="paragraph paragraph--p3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis
+              <p class="paragraph--2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis
                 tortor.</p>
             </div>
           </div>
@@ -362,7 +308,7 @@
                 <use xlink:href="./images/sprite.svg#icon-stopwatch"></use>
               </svg>
               <h3 class="heading--3 offers__heading">Speed Optimized</h3>
-              <p class="paragraph paragraph--p3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis
+              <p class="paragraph--2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis
                 tortor.</p>
             </div>
           </div>
@@ -373,7 +319,7 @@
                 <use xlink:href="./images/sprite.svg#icon-plugin"></use>
               </svg>
               <h3 class="heading--3 offers__heading">Fully Customizable</h3>
-              <p class="paragraph paragraph--p3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis
+              <p class="paragraph--2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis
                 tortor.</p>
             </div>
           </div>
@@ -383,7 +329,7 @@
                 <use xlink:href="./images/sprite.svg#icon-cogs"></use>
               </svg>
               <h3 class="heading--3 offers__heading">Regular Updates</h3>
-              <p class="paragraph paragraph--p3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis
+              <p class="paragraph--2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis
                 tortor.</p>
             </div>
           </div>
@@ -393,29 +339,140 @@
 
       </div>
     </section>
-    </main>
 
-    <!-- mobile header navigation -->
-    <nav
-      class="mobile__header"
-      aria-label="main navigation mobile."
-      role="navigation"
-      data-expanded="false"
-    >
-      <ul class="mobile__header__navigations">
-        <li class="mobile__header__nav">
-          <a href="#section--home" class="header__link">Home</a>
-        </li>
-        <li class="mobile__header__nav">
-          <a href="#section--features" class="header__link">Features</a>
-        </li>
-        <li class="mobile__header__nav">
-          <a href="#section--blog" class="header__link">Blog</a>
-        </li>
-        <li class="mobile__header__nav">
-          <a href="#section--contactus" class="header__link">Support</a>
-        </li>
-      </ul>
-    </nav>
-  </body>
+      <section class="section__pricing">
+      <div class="pricing">
+
+        <div class="section__details">
+          <div class="section__textGroup">
+            <h2 class="heading--h2 section__title">
+         We Offer Great Affordable Premium Prices.
+            </h2>
+            <p class="paragraph--2 section__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+              convallis tortor eros. Donec vitae tortor lacus. Phasellus
+              aliquam ante in maximus.
+            </p>
+          </div>
+        </div>
+
+        <div class="pricing__toggle">
+          <span class="">Bill Monthly</span>
+          <span class="pricing__toggle--active">Bill Annually</span>
+        </div>
+
+
+        <div class="pricing__cards">
+          <div class="pricing__card">
+            <div class="pricing__card__header">
+              <h3 class="heading--4">Starter</h3>
+            </div>
+            <div class="pricing__card__details">
+              <div class="pricing__card__package">
+                <span class="pricing__card__num">$29</span>
+                <span class="pricing__card__per paragraph--2">/per month</span>
+              </div>
+              <div class="pricing__card__data">
+                <p class="pricing__card__text paragraph--2">No credit card required</p>
+              </div>
+              <div class="pricing__card__data">
+
+                <a href="#" class="btn--fill pricing__card__btn ">Try
+                  for free</a>
+              </div>
+
+              <div class="pricing__card__data">
+                <p class="pricing__card__text paragraph--2">400 GB Storaget</p>
+                <p class="pricing__card__text paragraph--2">Unlimited Photos & Videos</p>
+                <p class="pricing__card__text paragraph--2">Exclusive Support</p>
+              </div>
+              
+              <div class="pricing__card__data">
+                <p class="pricing__card__text paragraph--2">7-day free trial</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pricing__card">
+            <div class="pricing__card__header">
+              <h3 class="heading--4">Growth Plan</h3>
+            </div>
+            <div class="pricing__card__details">
+              <div class="pricing__card__package">
+                <span class="pricing__card__num">$59</span>
+                <span class="pricing__card__per paragraph--2">/per month</span>
+              </div>
+              <div class="pricing__card__data">
+                <p class="pricing__card__text paragraph--2">No credit card required</p>
+              </div>
+              <div class="pricing__card__data">
+
+                <a href="#" class="btn--fill pricing__card__btn pricing__card__btn--green ">Try
+                  for free</a>
+              </div>
+
+              <div class="pricing__card__data">
+                <p class="pricing__card__text paragraph--2">400 GB Storaget</p>
+                <p class="pricing__card__text paragraph--2">Unlimited Photos & Videos</p>
+                <p class="pricing__card__text paragraph--2">Exclusive Support</p>
+              </div>
+              <div class="pricing__card__data">
+                <p class="pricing__card__text paragraph--2">7-day free trial</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pricing__card">
+            <div class="pricing__card__header">
+              <h3 class="heading--4">Business</h3>
+            </div>
+            <div class="pricing__card__details">
+              <div class="pricing__card__package">
+                <span class="pricing__card__num">$139</span>
+                <span class="pricing__card__per paragraph--2">/per month</span>
+              </div>
+              <div class="pricing__card__data">
+                <p class="pricing__card__text paragraph--2">No credit card required</p>
+              </div>
+              <div class="pricing__card__data">
+
+                <a href="#" class="btn--fill pricing__card__btn pricing__card__btn--orange">Try
+                  for free</a>
+              </div>
+
+              <div class="pricing__card__data">
+                <p class="pricing__card__text paragraph--2">400 GB Storaget</p>
+                <p class="pricing__card__text paragraph--2">Unlimited Photos & Videos</p>
+                <p class="pricing__card__text paragraph--2">Exclusive Support</p>
+              </div>
+              <div class="pricing__card__data">
+                <p class="pricing__card__text paragraph--2">7-day free trial</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- mobile header navigation -->
+  <nav class="mobile__header" aria-label="main navigation mobile." role="navigation" data-expanded="false">
+    <ul class="mobile__header__navigations">
+      <li class="mobile__header__nav">
+        <a href="#section--home" class="header__link">Home</a>
+      </li>
+      <li class="mobile__header__nav">
+        <a href="#section--features" class="header__link">Features</a>
+      </li>
+      <li class="mobile__header__nav">
+        <a href="#section--blog" class="header__link">Blog</a>
+      </li>
+      <li class="mobile__header__nav">
+        <a href="#section--contactus" class="header__link">Support</a>
+      </li>
+    </ul>
+  </nav>
+</body>
+
 </html>
