@@ -54,7 +54,6 @@ yearlybtn.addEventListener("click", async function () {
 showAchievements();
 
 //smooth scrooling
-//smooth navigation
 document
   .querySelector(".header__navigations")!
   .addEventListener("click", function (e: Event) {
@@ -62,7 +61,52 @@ document
 
     if ((e.target as HTMLElement)?.classList.contains("header__link")) {
       const id = (e.target as HTMLElement)?.getAttribute("href")!;
-      console.log(id);
+
       document.querySelector(id)?.scrollIntoView({ behavior: "smooth" });
     }
   });
+
+//Theme toggle
+// Retrieve theme from localStorage or default to "light"
+
+let theme = localStorage.getItem("theme") || "light";
+const htmlElement = document.querySelector("html")!;
+
+// Set the initial theme
+htmlElement.setAttribute("data-theme", theme);
+
+// Update the theme toggle based on the current theme
+const themeToggle = document.querySelector(".theme__icon")!;
+
+// Toggle icon visibility function
+function toggleIconVisibility() {
+  const sunIcon = document.querySelector(".header__icon--sun")! as HTMLElement;
+  const moonIcon = document.querySelector(
+    ".header__icon--moon"
+  )! as HTMLElement;
+
+  if (theme === "light") {
+    sunIcon.classList.add("header__icon--sun--hidden");
+    sunIcon.classList.remove("header__icon--sun--active");
+    moonIcon.classList.remove("header__icon--moon--hidden");
+    moonIcon.classList.add("header__icon--moon--active");
+  } else {
+    sunIcon.classList.remove("header__icon--sun--hidden");
+    sunIcon.classList.add("header__icon--sun--active");
+    moonIcon.classList.remove("header__icon--moon--active");
+    moonIcon.classList.add("header__icon--moon--hidden");
+  }
+}
+// Set initial icon visibility
+toggleIconVisibility();
+
+// Event listener for theme toggle
+themeToggle.addEventListener("click", function () {
+  // Toggle the theme
+  theme = theme === "light" ? "dark" : "light";
+  htmlElement.setAttribute("data-theme", theme);
+  localStorage.setItem("theme", theme);
+
+  // Toggle icon visibility
+  toggleIconVisibility();
+});

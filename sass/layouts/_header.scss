@@ -6,7 +6,7 @@
   height: 10rem;
   border-bottom: 1px solid var(--color--primary-50);
   box-shadow: var(--box-shadow-bottom);
-
+  background-color: var(--color-bg);
   @include responsive(desktop-small) {
     grid-template-columns: 30rem 1fr 30rem;
   }
@@ -35,7 +35,7 @@
 
   &__logoName {
     font-size: var(--font-size-xlg);
-    color: var(--color--primary-950);
+    color: var(--text-primary);
     font-weight: 700;
     margin-right: var(--space-10);
     @include responsive(desktop-small) {
@@ -86,7 +86,7 @@
   &__link:link {
     font-size: var(--font-size-smd);
     font-weight: 500;
-    color: var(--color--primary-900);
+    color: var(--text-light-gray);
     text-transform: capitalize;
     transition: color var(--transition-timing-2)
       cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -96,7 +96,7 @@
     }
 
     &:hover {
-      color: var(--color--primary-600);
+      color: var(--color--primary-500);
     }
   }
 

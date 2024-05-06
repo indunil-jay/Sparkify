@@ -1,4 +1,20 @@
 :root {
+  &[data-theme="light"] {
+    --color-bg: rgb(255, 255, 255);
+    --text-primary: #161a50;
+    --text-light-gray: #263189;
+    --icon-primary: #4e6bff;
+    --border-primary: #c2d8ff;
+  }
+
+  &[data-theme="dark"] {
+    --color-bg: #040d12;
+    --text-primary: #fff;
+    --text-light-gray: #ecf4ff;
+    --icon-primary: #ecf4ff;
+    --border-primary: #181717;
+  }
+
   --color--primary-50: #ecf4ff;
   --color--primary-100: #ddeaff;
   --color--primary-200: #c2d8ff;
@@ -15,7 +31,7 @@
   --color-green: rgb(32, 202, 102);
   --color-orange: rgb(250, 145, 97);
   --color-yellow: rgb(255, 221, 15);
-  --color-white: rgb(255, 255, 255);
+  --color-white: #fff;
   --color-grey: rgb(121, 128, 138);
 
   --font-size-default: 1.6rem; //16px
