@@ -7,11 +7,11 @@ export const renderTeamCards = () => {
   const cardlist = teamCards
     .map((card) => {
       return `
-          <div class="team__usercard">
+          <div class="team__usercard" >
             <div class="team__picture">
               <img src=${card.imagePath} alt= "${card.username}-image" />
             </div>
-            <span class="team__username">${card.username}</span>
+            <span class="team__username" tabindex="0">${card.username}</span>
             <span class="team__user__role">${card.userrole}</span>
           </div>`;
     })
