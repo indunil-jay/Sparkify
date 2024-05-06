@@ -52,3 +52,17 @@ yearlybtn.addEventListener("click", async function () {
 
 //clients number
 showAchievements();
+
+//smooth scrooling
+//smooth navigation
+document
+  .querySelector(".header__navigations")!
+  .addEventListener("click", function (e: Event) {
+    e.preventDefault();
+
+    if ((e.target as HTMLElement)?.classList.contains("header__link")) {
+      const id = (e.target as HTMLElement)?.getAttribute("href")!;
+      console.log(id);
+      document.querySelector(id)?.scrollIntoView({ behavior: "smooth" });
+    }
+  });

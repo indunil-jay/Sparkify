@@ -19,8 +19,8 @@ import {
 export const navigation: NavigationTypes[] = [
   {
     id: 1,
-    name: "Home",
-    url: "/#section--home",
+    name: "Pricing",
+    url: "#section--pricing",
   },
   {
     id: 2,
@@ -40,13 +40,13 @@ export const navigation: NavigationTypes[] = [
   {
     id: 5,
     name: "sign in",
-    url: "/#sign-in",
+    url: "#sign-in",
     isMobile: true,
   },
   {
     id: 6,
     name: "sign up",
-    url: "/#sign-up",
+    url: "#sign-up",
     isMobile: true,
   },
 ];
