@@ -109,7 +109,7 @@ export const packages: PriceCard[] = [
   {
     id: 1,
     title: "Starter",
-    price: "$49",
+    price: "49",
     requirement: "No credit card required",
     btnText: "Start for free",
     options: [
@@ -122,7 +122,7 @@ export const packages: PriceCard[] = [
   {
     id: 2,
     title: "Professional",
-    price: "$99",
+    price: "99.9",
     requirement: "No credit card required",
     btnText: "Start for free",
     options: [
@@ -136,7 +136,7 @@ export const packages: PriceCard[] = [
   {
     id: 3,
     title: "Enterprise",
-    price: "$299",
+    price: "299",
     requirement: "Custom quote required",
     btnText: "Contact us",
     options: [
