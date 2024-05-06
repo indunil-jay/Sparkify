@@ -14,6 +14,7 @@ import {
   NavigationTypes,
   TeamCard,
   PriceCard,
+  TestimonialCard,
 } from "./types";
 
 export const navigation: NavigationTypes[] = [
@@ -146,5 +147,32 @@ export const packages: PriceCard[] = [
     ],
     trailDuration: "Custom",
     btnColorClass: "pricing__card__btn--orange",
+  },
+];
+
+export const testimonailCards: TestimonialCard[] = [
+  {
+    id: 1,
+    header: "Outstanding Web Development Services",
+    text: "I am thrilled with the results achieved by the team at Sparkify. They listened attentively to my requirements and delivered a website that exceeded my expectations. The attention to detail and the level of professionalism demonstrated throughout the project were exceptional. I highly recommend Sparkify for anyone looking for top-notch web development services.",
+    imagePath: team1,
+    username: "Emily Thompson",
+    location: "New York, USA",
+  },
+  {
+    id: 2,
+    header: "Exceptional UX/UI Design Services",
+    text: "Working with Sparkify was a game-changer for our business. Their team of designers meticulously crafted a stunning user interface for our website, resulting in a significant increase in user engagement and conversions. We were impressed by their creativity, professionalism, and dedication to delivering outstanding results.",
+    imagePath: team2,
+    username: "John Smith",
+    location: "London, UK",
+  },
+  {
+    id: 3,
+    header: "Efficient Digital Marketing Strategies",
+    text: "Sparkify's digital marketing services have been instrumental in driving traffic to our website and boosting our online presence. Their strategic approach, coupled with their in-depth knowledge of the latest trends in digital marketing, has helped us reach our target audience effectively and achieve remarkable results. We highly recommend Sparkify to anyone looking to grow their business online.",
+    imagePath: team3,
+    username: "Sarah Johnson",
+    location: "Sydney, Australia",
   },
 ];

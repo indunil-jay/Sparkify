@@ -30,3 +30,12 @@ export type PriceCard = {
   trailDuration: string;
   btnColorClass?: string;
 };
+
+export type TestimonialCard = {
+  id: number;
+  header: string;
+  text: string;
+  imagePath: string;
+  username: string;
+  location: string;
+};

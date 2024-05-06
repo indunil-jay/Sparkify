@@ -5,6 +5,7 @@ import { renderMasnoryGallery } from "./components/masonryGallery";
 import { renderMobileNavigation } from "./components/mobilenav";
 import { priceToggler, renderPriceCards } from "./components/priceCard";
 import { renderTeamCards } from "./components/teamcards";
+import { renderTestimonialCards } from "./components/testimonialCards";
 
 export const toggleOpenBtn = document.querySelector<HTMLButtonElement>(
   ".header__icon--menu"
@@ -35,7 +36,10 @@ renderMasnoryGallery();
 renderTeamCards();
 //render price cards
 renderPriceCards();
+//render testimonial cards
+renderTestimonialCards();
 
+//toggle price
 monlthybtn.addEventListener("click", async function () {
   monlthybtn.classList.add("pricing__toggle--active");
   yearlybtn.classList.remove("pricing__toggle--active");
@@ -151,4 +155,91 @@ const sectionObserver = new IntersectionObserver(revealSection, {
 allSection.forEach(function (section) {
   sectionObserver.observe(section);
   section.classList.add("section--hidden");
+});
+
+//testimonial slider
+
+const slides = document.querySelectorAll(".testimonial__slide")!;
+const btnLeft = document.querySelector(".slider__btn--left")!;
+const btnRight = document.querySelector(".slider__btn--right")!;
+let currentSlide = 0;
+
+const maxSlide = slides.length - 1;
+
+//implementing slider dots
+const dotContaier = document.querySelector(".dots")!;
+
+const createDots = function () {
+  slides.forEach((_, i) => {
+    dotContaier.insertAdjacentHTML(
+      "beforeend",
+      `<button class ="dots__dot" data-slide="${i}"></button>`
+    );
+  });
+};
+
+createDots();
+
+const activateDot = function (slide: number) {
+  document.querySelectorAll(".dots__dot").forEach((dot) => {
+    dot.classList.remove("dots__dot--active");
+  });
+
+  document
+    .querySelector(`.dots__dot[data-slide="${slide}"]`)!
+    .classList.add("dots__dot--active");
+};
+
+activateDot(0);
+
+const goToSlide = function (slide: number) {
+  slides.forEach(
+    (s, i) =>
+      ((s as HTMLElement).style.transform = `translateX(${100 * (i - slide)}%)`)
+  );
+};
+
+goToSlide(0);
+
+const nextSlide = function () {
+  if (currentSlide === maxSlide) {
+    currentSlide = 0;
+  } else {
+    currentSlide++;
+
+    // slides.forEach(
+    //   (s, i) => (s.style.transform = `translateX(${100 * (i - currentSlide)}%)`)
+    // );
+  }
+  goToSlide(currentSlide);
+  activateDot(currentSlide);
+};
+const prevSlide = function () {
+  if (currentSlide === 0) {
+    currentSlide = maxSlide;
+  } else {
+    currentSlide--;
+  }
+  goToSlide(currentSlide);
+  activateDot(currentSlide);
+};
+
+goToSlide(0);
+
+btnRight.addEventListener("click", nextSlide);
+btnLeft.addEventListener("click", prevSlide);
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "ArrowLeft") prevSlide();
+  e.key === "ArrowRight" && nextSlide();
+});
+
+dotContaier.addEventListener("click", function (e) {
+  if ((e.target as HTMLElement).classList.contains("dots__dot")) {
+    const slide = (e.target as HTMLElement).dataset.slide;
+    //@ts-ignore
+    goToSlide(slide);
+    //@ts-ignore
+    activateDot(slide);
+  }
 });

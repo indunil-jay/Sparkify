@@ -4,11 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Sparkify is a Specialize In UI/UX, Web Development, Digital Marketing Agency."
-    />
-
+  <meta name="description" content="Sparkify is a Specialize In UI/UX, Web Development, Digital Marketing Agency." />
+  <meta name="theme_color" content="#ffffff">
 
   <title>Sparkify</title>
   <link rel="shortcut icon" href="./images/logos/sparkify-logo-sm.png" type="image/png" />
@@ -17,109 +14,108 @@
 </head>
 
 <body class="container">
-  <div class="backdrop"></div>
-<div class="header__block">
- <!--header -->
-  <header class="header" aria-label="header">
-    <!-- logo left -->
-    <div class="header__left">
-      <a href="/" class="header__logo" 
-        >
-        <span class="header__logoName">Sparkify</span>
-        <div class="header__logoPicture">
-          <img src="./images/logos/sparkify-logo-sm.png" alt="sparkify  company logo." />
+
+  <div class="header__block">
+    <!--header -->
+    <header class="header" aria-label="header">
+      <!-- logo left -->
+      <div class="header__left">
+        <a href="/" class="header__logo">
+          <span class="header__logoName">Sparkify</span>
+          <div class="header__logoPicture">
+            <img src="./images/logos/sparkify-logo-sm.png" alt="sparkify  company logo." />
+          </div>
+        </a>
+      </div>
+      <!-- navigation middle -->
+      <nav class="header__middle" aria-label="main navigation." role="navigation">
+        <ul class="header__navigations">
+          &nbsp;
+        </ul>
+      </nav>
+
+      <!-- right -->
+      <div class="header__right">
+        <div class="theme__icon">
+          <button class="header__icon header__icon--sun header__icon--sun--active" aria-label="theme-toggler-light.">
+            <svg class="icon">
+              <use xlink:href="./images/sprite.svg#icon-sun"></use>
+            </svg>
+          </button>
+
+          <button class="header__icon header__icon--moon header__icon--moon--hidden" aria-label="theme-toggler-dark.">
+            <svg class="icon">
+              <use xlink:href="./images/sprite.svg#icon-moon"></use>
+            </svg>
+          </button>
         </div>
-      </a>
-    </div>
-    <!-- navigation middle -->
-    <nav class="header__middle" aria-label="main navigation." role="navigation">
-      <ul class="header__navigations">
-       &nbsp;
-      </ul>
-    </nav>
 
-    <!-- right -->
-    <div class="header__right">
-      <div class="theme__icon">
-      <button class="header__icon header__icon--sun header__icon--sun--active" aria-label="theme-toggler-light.">
-        <svg class="icon">
-          <use xlink:href="./images/sprite.svg#icon-sun"></use>
-        </svg>
-      </button>
+        <div class="header__btn-container" aria-label="header buttons container.">
+          <a href="#" class="header__btn btn--border">Sign in</a>
+          <a href="#" class="header__btn btn--fill">Sign up</a>
+        </div>
 
-      <button class="header__icon header__icon--moon header__icon--moon--hidden" aria-label="theme-toggler-dark.">
-        <svg class="icon">
-          <use xlink:href="./images/sprite.svg#icon-moon"></use>
-        </svg>
-      </button>
+        <button class="header__icon header__icon--menu header__icon--close--active" aria-label="open mobile menu.">
+          <svg class="icon">
+            <use xlink:href="./images/sprite.svg#icon-menu "></use>
+          </svg>
+        </button>
+        <button class="header__icon header__icon--close header__icon--close--hidden" aria-label="close mobile menu.">
+          <svg class="icon">
+            <use xlink:href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
-
-      <div class="header__btn-container" aria-label="header buttons container.">
-        <a href="#" class="header__btn btn--border">Sign in</a>
-        <a href="#" class="header__btn btn--fill">Sign up</a>
-      </div>
-
-      <button class="header__icon header__icon--menu header__icon--close--active" aria-label="open mobile menu.">
-        <svg class="icon">
-          <use xlink:href="./images/sprite.svg#icon-menu "></use>
-        </svg>
-      </button>
-      <button class="header__icon header__icon--close header__icon--close--hidden" aria-label="close mobile menu.">
-        <svg class="icon">
-          <use xlink:href="./images/sprite.svg#icon-close"></use>
-        </svg>
-      </button>
-    </div>
-  </header>
- <section id="section--home" class="section__hero" aria-label="hero section website landing part start.">
+    </header>
+    <section id="section--home" class="section__hero" aria-label="hero section website landing part start.">
       <div class="hero__wrapper">
-         <div class="hero__background" aria-label="main bacground image in landing part.">
-              <img src="./images/bg.svg" alt="mobile-hero"  />
-          </div> 
-          <div class="hero__overlay" aria-label="works as overlay to the main background image">&nbsp;</div>
-      <div class="hero">
-      
-        <div class="hero__details">
-          <div class="hero__details__box">
-         
-            <h1 class="heading--1 hero__heading" aria-label="main website title">
-              We Specialize In UI/UX, Web Development, Digital Marketing
-            </h1>
-            <p class="paragraph--1 hero__text">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Nostrum numquam aspernatur deleniti harum iure, excepturi
-              quidem, eaque pariatur qui eligendi nesciunt voluptatibus
-              obcaecati similique necessitatibus.
-            </p>
-            <div class="hero__cta">
-              <a href="#" class="hero__callbtn btn--fill btn--primary" role="button">
-                Get start Now
-                <span class="hero__arrow"> &rarr;</span>
-              </a>
-              <div class="hero__call">
-                <span class="hero__callNumber">Call us (0123) 456 - 789</span>
-                <span class="hero__callText">For any question or concern</span>
+        <div class="hero__background" aria-label="main bacground image in landing part.">
+          <img src="./images/bg.svg" alt="mobile-hero" />
+        </div>
+        <div class="hero__overlay" aria-label="works as overlay to the main background image">&nbsp;</div>
+        <div class="hero">
+
+          <div class="hero__details">
+            <div class="hero__details__box">
+
+              <h1 class="heading--1 hero__heading" aria-label="main website title">
+                We Specialize In UI/UX, Web Development, Digital Marketing
+              </h1>
+              <p class="paragraph--1 hero__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Nostrum numquam aspernatur deleniti harum iure, excepturi
+                quidem, eaque pariatur qui eligendi nesciunt voluptatibus
+                obcaecati similique necessitatibus.
+              </p>
+              <div class="hero__cta">
+                <a href="#" class="hero__callbtn btn--fill btn--primary" role="button">
+                  Get start Now
+                  <span class="hero__arrow"> &rarr;</span>
+                </a>
+                <div class="hero__call">
+                  <span class="hero__callNumber">Call us (0123) 456 - 789</span>
+                  <span class="hero__callText">For any question or concern</span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="hero__gallery">
-           
-          <div class="hero__masonary" aria-label="mansory grid gallery">
-           &nbsp;
+          <div class="hero__gallery">
+
+            <div class="hero__masonary" aria-label="mansory grid gallery">
+              &nbsp;
+            </div>
           </div>
         </div>
       </div>
-      </div> 
     </section>
-</div>
- 
+  </div>
+
 
   <!-- main -->
   <main class="main" aria-roledescription="web application main content goes inside this main.">
 
-   
+
 
     <section class="section  section__services" aria-label="trusted reasons details strat.">
       <div class="service">
@@ -132,7 +128,7 @@
             </div>
           </div>
 
-          <div class="service__card__right" >
+          <div class="service__card__right">
             <h2 class="heading--3 service__heading">24/7 Support</h2>
             <p class="paragraph--2 service__text">
               Lorem ipsum dolor sit amet conse adipiscing elit.
@@ -175,7 +171,7 @@
     </section>
 
     <section class="section section__whyus" aria-label="why company choose us section start.">
-      <div class="whyus" >
+      <div class="whyus">
         <div class="whyus__left">
           <div class="whyus__picture whyus__picture--1">
             <img src="./images/whyus/user-3.jpg" alt="grid-image-user1" />
@@ -204,7 +200,7 @@
 
 
     <section class="section section__team" aria-label="current team member section start.">
-      <div class="team" >
+      <div class="team">
         <div class="section__details">
           <div class="section__textGroup">
             <h2 class="heading--h2 section__title" tabindex="0">
@@ -224,7 +220,7 @@
 
 
     <section id="section section--features" class="section__offers" aria-label="what we provided section start.">
-      <div class="offers" >
+      <div class="offers">
 
         <div class="section__details">
           <div class="section__textGroup">
@@ -312,13 +308,13 @@
       </div>
     </section>
 
-      <section id="section section--pricing" class="section__pricing" aria-label="price card section start.">
-        <div class="pricing">
+    <section id="section section--pricing" class="section__pricing" aria-label="price card section start.">
+      <div class="pricing">
 
         <div class="section__details">
           <div class="section__textGroup">
             <h2 class="heading--h2 section__title" tabindex="0">
-         We Offer Great Affordable Premium Prices.
+              We Offer Great Affordable Premium Prices.
             </h2>
             <p class="paragraph--2 section__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
@@ -334,20 +330,20 @@
         </div>
 
 
-          <div class="pricing__cards">
-        
+        <div class="pricing__cards">
 
-          </div>
-         </div>
+
+        </div>
+      </div>
     </section>
 
-  <section class="section section__projects" aria-label="currenlty done project show case start.">
+    <section class="section section__projects" aria-label="currenlty done project show case start.">
       <div class="projects">
-       
+
         <div class="section__details">
           <div class="section__textGroup">
             <h2 class="heading--h2 section__title" tabindex="0">
-                  Discover Our Innovative Solutions At Competitive Rates.
+              Discover Our Innovative Solutions At Competitive Rates.
             </h2>
             <p class="paragraph--2 section__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
@@ -356,86 +352,96 @@
             </p>
           </div>
         </div>
-       
-      
 
-      <div class="projects__tabBtnsContainer">
-        <ul class="projects__list" tabindex="0">
-          <li class=" projects__item projects__item--active" tabindex="0">All</li>
-          <li class=" projects__item" tabindex="0">Branding</li>
-          <li class=" projects__item" tabindex="0">Digital Experience</li>
-          <li class=" projects__item" tabindex="0">Ecommerce</li>
-        </ul>
-      </div>
 
-      <div class="projects__grid">
-        <div class="projects__picture projects__picture--1" tabindex="0">
-          <img src="./images/gallery/photo-1.jpg" alt="gallery-img-1"  >
-          <div class="projects__box">
-            <h4 class="projects__text">Photo Retouching</h4>
-            <p class="paragraph--2 projects__para ">Branded Ecommerce</p>
-            <svg class=" projects__box__icon">
-              <use xlink:href="./images/sprite.svg#icon-arrow-right"></use>
-            </svg>
-          </div>
+
+        <div class="projects__tabBtnsContainer">
+          <ul class="projects__list" tabindex="0">
+            <li class=" projects__item projects__item--active" tabindex="0">All</li>
+            <li class=" projects__item" tabindex="0">Branding</li>
+            <li class=" projects__item" tabindex="0">Digital Experience</li>
+            <li class=" projects__item" tabindex="0">Ecommerce</li>
+          </ul>
         </div>
-        <div class="projects__picture projects__picture--2" tabindex="0">
 
-          <img src="./images/gallery/photo-3.jpg" alt="gallery-img-2" >
-          <div class="projects__box">
-            <h4 class="projects__text">Photo Retouching</h4>
-            <p class="paragraph--2 projects__para ">Branded Ecommerce</p>
-            <svg class=" projects__box__icon">
-              <use xlink:href="./images/sprite.svg#icon-arrow-right"></use>
-            </svg>
+        <div class="projects__grid">
+          <div class="projects__picture projects__picture--1" tabindex="0">
+            <img src="./images/gallery/photo-1.jpg" alt="gallery-img-1">
+            <div class="projects__box">
+              <h4 class="projects__text">Photo Retouching</h4>
+              <p class="paragraph--2 projects__para ">Branded Ecommerce</p>
+              <svg class=" projects__box__icon">
+                <use xlink:href="./images/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </div>
           </div>
-        </div>
-        <div class="projects__picture projects__picture--3" tabindex="0">
-          <img src="./images/gallery/photo-2.jpg" alt="gallery-img-3" >
-          <div class="projects__box">
-            <h4 class="projects__text">Photo Retouching</h4>
-            <p class="paragraph--2 projects__para ">Branded Ecommerce</p>
-            <svg class=" projects__box__icon">
-              <use xlink:href="./images/sprite.svg#icon-arrow-right"></use>
-            </svg>
+          <div class="projects__picture projects__picture--2" tabindex="0">
+
+            <img src="./images/gallery/photo-3.jpg" alt="gallery-img-2">
+            <div class="projects__box">
+              <h4 class="projects__text">Photo Retouching</h4>
+              <p class="paragraph--2 projects__para ">Branded Ecommerce</p>
+              <svg class=" projects__box__icon">
+                <use xlink:href="./images/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </div>
           </div>
-        </div>
-        <div class="projects__picture projects__picture--4" tabindex="0">
-
-
-          <img src="./images/gallery/photo-4.jpg" alt="gallery-img-4" >
-
-          <div class="projects__box">
-            <h4 class="projects__text">Photo Retouching</h4>
-            <p class="paragraph--2 projects__para ">Branded Ecommerce</p>
-            <svg class=" projects__box__icon">
-              <use xlink:href="./images/sprite.svg#icon-arrow-right"></use>
-            </svg>
+          <div class="projects__picture projects__picture--3" tabindex="0">
+            <img src="./images/gallery/photo-2.jpg" alt="gallery-img-3">
+            <div class="projects__box">
+              <h4 class="projects__text">Photo Retouching</h4>
+              <p class="paragraph--2 projects__para ">Branded Ecommerce</p>
+              <svg class=" projects__box__icon">
+                <use xlink:href="./images/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </div>
           </div>
-        </div>
-      </div>
-       </div>
-    </section> 
+          <div class="projects__picture projects__picture--4" tabindex="0">
 
-    <section class="section__testimonial" aria-label="user testimonial start.">
-        <div class="testimonial">
-        <div class="section__details">
-            <div class="section__textGroup">
-              <h2 class="heading--h2 section__title" tabindex="0">
-              Client’s Testimonials.
-              </h2>
-              <p class="paragraph--2 section__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                convallis tortor eros. Donec vitae tortor lacus. Phasellus
-                aliquam ante in maximus.
-              </p>
+
+            <img src="./images/gallery/photo-4.jpg" alt="gallery-img-4">
+
+            <div class="projects__box">
+              <h4 class="projects__text">Photo Retouching</h4>
+              <p class="paragraph--2 projects__para ">Branded Ecommerce</p>
+              <svg class=" projects__box__icon">
+                <use xlink:href="./images/sprite.svg#icon-arrow-right"></use>
+              </svg>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section__testimonial" aria-label="user testimonial start.">
+      <div class="testimonial__container">
+        <div class="section__details">
+          <div class="section__textGroup">
+            <h2 class="heading--h2 section__title" tabindex="0">
+              Client’s Testimonials.
+            </h2>
+            <p class="paragraph--2 section__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+              convallis tortor eros. Donec vitae tortor lacus. Phasellus
+              aliquam ante in maximus.
+            </p>
+          </div>
+        </div>
+
+      <div class="testimonial__slider">
+       
+
+      
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+      </div>
     </section>
 
 
-     <section class="section__bannerClients" aria-label="banner start.">
+    <section class="section__bannerClients" aria-label="banner start.">
       <div class="bannerClients">
         <div class="bannerClients__container">
           <div class="bannerClients__box" tabindex="0">
@@ -458,12 +464,12 @@
       </div>
     </section>
 
-      <section class="section__brands" aria-label="partnership brands start.">
-        <div class="brands">
-         <div class="section__details">
+    <section class="section__brands" aria-label="partnership brands start.">
+      <div class="brands">
+        <div class="section__details">
           <div class="section__textGroup">
             <h2 class="heading--h2 section__title" tabindex="0">
-                 Trusted By Global Brands.
+              Trusted By Global Brands.
             </h2>
             <p class="paragraph--2 section__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
@@ -507,24 +513,24 @@
             </div>
           </div>
         </div>
-       </div>
-      </section>
+      </div>
+    </section>
 
-      
-    <section id="section--blog" class="section__blog" aria-label="current blogs" >
+
+    <section id="section--blog" class="section__blog" aria-label="current blogs">
       <div class="blog">
-          <div class="section__details">
-            <div class="section__textGroup">
+        <div class="section__details">
+          <div class="section__textGroup">
             <h2 class="heading--h2 section__title" tabindex="0">
-            Latest Blogs & News.
+              Latest Blogs & News.
             </h2>
             <p class="paragraph--2 section__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
               convallis tortor eros. Donec vitae tortor lacus. Phasellus
               aliquam ante in maximus.
             </p>
-           </div>
-          
+          </div>
+
         </div>
       </div>
 
@@ -545,21 +551,21 @@
             <div class="blog__author">
               <div class="blog__box">
                 <svg class="blog__icon">
-                  <use xlink:href="./images/sprite.svg#icon-user"/>
+                  <use xlink:href="./images/sprite.svg#icon-user" />
                 </svg>
                 <span class="blog__text">Sam Rodrigo</span>
               </div>
               <div class="blog__box">
                 <svg class="blog__icon">
-                  <use xlink:href="./images/sprite.svg#icon-calendar"/>
+                  <use xlink:href="./images/sprite.svg#icon-calendar" />
                 </svg>
                 <span class="blog__text">25 Dec, 2025</span>
               </div>
 
             </div>
-              <h3 class="heading--3 blog__link-h3">
+            <h3 class="heading--3 blog__link-h3">
               <a href="#" class="blog__link">Free advertising for your online business</a>
-              </h3>
+            </h3>
           </div>
 
         </div>
@@ -578,21 +584,21 @@
             <div class="blog__author">
               <div class="blog__box">
                 <svg class="blog__icon">
-                  <use xlink:href="./images/sprite.svg#icon-user"/>
+                  <use xlink:href="./images/sprite.svg#icon-user" />
                 </svg>
                 <span class="blog__text">Sam Rodrigo</span>
               </div>
               <div class="blog__box">
                 <svg class="blog__icon">
-                  <use xlink:href="./images/sprite.svg#icon-calendar"/>
+                  <use xlink:href="./images/sprite.svg#icon-calendar" />
                 </svg>
                 <span class="blog__text">25 Dec, 2025</span>
               </div>
 
             </div>
-              <h3 class="heading--3 blog__link-h3">
+            <h3 class="heading--3 blog__link-h3">
               <a href="#" class="blog__link">Free advertising for your online business</a>
-              </h3>
+            </h3>
           </div>
 
         </div>
@@ -612,36 +618,36 @@
             <div class="blog__author">
               <div class="blog__box">
                 <svg class="blog__icon">
-                  <use xlink:href="./images/sprite.svg#icon-user"/>
+                  <use xlink:href="./images/sprite.svg#icon-user" />
                 </svg>
                 <span class="blog__text">Sam Rodrigo</span>
               </div>
               <div class="blog__box">
                 <svg class="blog__icon">
-                  <use xlink:href="./images/sprite.svg#icon-calendar"/>
+                  <use xlink:href="./images/sprite.svg#icon-calendar" />
                 </svg>
                 <span class="blog__text">25 Dec, 2025</span>
               </div>
 
             </div>
-              <h3 class="heading--3 blog__link-h3">
+            <h3 class="heading--3 blog__link-h3">
               <a href="#" class="blog__link">Free advertising for your online business</a>
-              </h3>
+            </h3>
           </div>
 
         </div>
-   
+
       </div>
     </section>
 
-  
-  <section id="section section--contactus" class="section__contact" aria-label="contact us form start." >
+
+    <section id="section section--contactus" class="section__contact" aria-label="contact us form start.">
       <div class="contact">
-       
+
         <div class="section__details">
           <div class="section__textGroup">
             <h2 class="heading--h2 section__title" tabindex="0">
-               Let’s Stay Connected.
+              Let’s Stay Connected.
             </h2>
             <p class="paragraph--2 section__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
@@ -752,8 +758,8 @@
           </div>
         </div>
       </div>
-  </section>
-     <section class="section__banner" aria-label="banner for signup">
+    </section>
+    <section class="section__banner" aria-label="banner for signup">
       <div class="banner">
         <div class="banner__left">
           <h2 class="heading heading--h2 banner__heading " tabindex="0">Join with 5000+ Startups Growing with Base.</h2>
@@ -766,118 +772,120 @@
           </div>
         </div>
       </div>
-    </section> 
-  
+    </section>
+
   </main>
- <footer class="section footer" aria-label="footer start.">
-      <div class="footer__container">
+  <footer class="section footer" aria-label="footer start.">
+    <div class="footer__container">
 
 
-        <div class="footer__logoContainer">
-          <a href="/" class="header__logo">
-            <p class="header__logoName">Sparkify</p>
-            <div class="header__logoPicture">
-              <img src="./images/logos/sparkify-logo-sm.png" alt="company logo" />
+      <div class="footer__logoContainer">
+        <a href="/" class="header__logo">
+          <p class="header__logoName">Sparkify</p>
+          <div class="header__logoPicture">
+            <img src="./images/logos/sparkify-logo-sm.png" alt="company logo" />
+          </div>
+        </a>
+        <p class="paragraph--2 footer__logoSlug">Lorem ipsum dolor sit amet consectetur adipisicing elit
+        </p>
+
+        <div class="footer__socialLinks">
+          <div class="contact__social__list">
+            <div class="contact__item">
+              <a href="#" class="contact__link" aria-label="link for navigate to the facebook">
+                <svg class="contact__icon">
+                  <use xlink:href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
             </div>
-          </a>
-          <p class="paragraph--2 footer__logoSlug">Lorem ipsum dolor sit amet consectetur adipisicing elit
-          </p>
-
-          <div class="footer__socialLinks">
-            <div class="contact__social__list">
-              <div class="contact__item">
-                <a href="#" class="contact__link" aria-label="link for navigate to the facebook">
-                  <svg class="contact__icon">
-                    <use xlink:href="./images/sprite.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </div>
-              <div class="contact__item">
-                <a href="#" class="contact__link" aria-label="link for navigate to the twitter">
-                  <svg class="contact__icon">
-                    <use xlink:href="./images/sprite.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </div>
-              <div class="contact__item">
-                <a href="#" class="contact__link" aria-label="link for navigate to the linkedin">
-                  <svg class="contact__icon">
-                    <use xlink:href="./images/sprite.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </div>
-              <div class="contact__item">
-                <a href="#" class="contact__link" aria-label="link for navigate to the behance">
-                  <svg class="contact__icon">
-                    <use xlink:href="./images/sprite.svg#icon-behance"></use>
-                  </svg>
-                </a>
-              </div>
+            <div class="contact__item">
+              <a href="#" class="contact__link" aria-label="link for navigate to the twitter">
+                <svg class="contact__icon">
+                  <use xlink:href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="contact__item">
+              <a href="#" class="contact__link" aria-label="link for navigate to the linkedin">
+                <svg class="contact__icon">
+                  <use xlink:href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="contact__item">
+              <a href="#" class="contact__link" aria-label="link for navigate to the behance">
+                <svg class="contact__icon">
+                  <use xlink:href="./images/sprite.svg#icon-behance"></use>
+                </svg>
+              </a>
             </div>
           </div>
-
         </div>
 
-        <div class="footer__quickLinks">
-          <h2 class="footer__listHeader">Qiuck Links</h2>
-          <ul class="footer__list">
-            <li class="footer__item"><a href="#" class="footer__link">Home</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Product</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Careers <span
-                  class="footer__span">Hiring</span></a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Home</a></li>
-          </ul>
-        </div>
-        <div class="footer__services">
-          <h2 class="footer__listHeader">Services</h2>
-          <ul class="footer__list">
-            <li class="footer__item"><a href="#" class="footer__link">Web Development</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Graphics Design</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Digital Marketing </a></li>
-            <li class="footer__item"><a href="#" class="footer__link">UI/UX Design</a></li>
-          </ul>
+      </div>
 
-        </div>
-        <div class="footer__support">
-          <h2 class="footer__listHeader">Support</h2>
-          <ul class="footer__list">
-            <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Press media</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Our Blog </a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="footer__newsletter">
-          <h2 class="footer__listHeader">Newsletter</h2>
-          <p class="paragraph--2 footer__news__text">Subscribe to receice future updates</p>
-          <div class="footer__inputContainer">
-            <input type="emailz" name="emailz" id="emailz" placeholder="Email address">
-            <svg class="icon footer__icon">
-              <use xlink:href="./images/sprite.svg#icon-send"></use>
-            </svg>
-          </div>
+      <div class="footer__quickLinks">
+        <h2 class="footer__listHeader">Qiuck Links</h2>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#" class="footer__link">Home</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Product</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Careers <span class="footer__span">Hiring</span></a>
+          </li>
+          <li class="footer__item"><a href="#" class="footer__link">Home</a></li>
+        </ul>
+      </div>
+      <div class="footer__services">
+        <h2 class="footer__listHeader">Services</h2>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#" class="footer__link">Web Development</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Graphics Design</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Digital Marketing </a></li>
+          <li class="footer__item"><a href="#" class="footer__link">UI/UX Design</a></li>
+        </ul>
+
+      </div>
+      <div class="footer__support">
+        <h2 class="footer__listHeader">Support</h2>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Press media</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Our Blog </a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer__newsletter">
+        <h2 class="footer__listHeader">Newsletter</h2>
+        <p class="paragraph--2 footer__news__text">Subscribe to receice future updates</p>
+        <div class="footer__inputContainer">
+          <input type="emailz" name="emailz" id="emailz" placeholder="Email address">
+          <svg class="icon footer__icon">
+            <use xlink:href="./images/sprite.svg#icon-send"></use>
+          </svg>
         </div>
       </div>
-      <div class="footer__end">
-        <div class="footer__linkContainer">
-          <ul class="footer__list">
-            <li class="footer__item"><a href="" class="footer__link">English</a></li>
-            <li class="footer__item"><a href="" class="footer__link">Privacy Police</a></li>
-            <li class="footer__item"><a href="" class="footer__link">Support </a></li>
+    </div>
+    <div class="footer__end">
+      <div class="footer__linkContainer">
+        <ul class="footer__list">
+          <li class="footer__item"><a href="" class="footer__link">English</a></li>
+          <li class="footer__item"><a href="" class="footer__link">Privacy Police</a></li>
+          <li class="footer__item"><a href="" class="footer__link">Support </a></li>
 
-          </ul>
-        </div>
-        <div class="copyRights">
-           <p class="paragraph--2">&COPY; 2024 Base. All rights reserved</p>
-        </div>
+        </ul>
       </div>
-</footer>
+      <div class="copyRights">
+        <p class="paragraph--2">&COPY; 2024 Base. All rights reserved</p>
+      </div>
+    </div>
+  </footer>
   <!-- mobile header navigation -->
   <nav class="mobile__header" aria-label="main navigation mobile." role="navigation" data-expanded="false">
     <ul class="mobile__header__navigations">
-   &nbsp;
+      &nbsp;
     </ul>
   </nav>
+  <!-- overlay -->
+  <div class="backdrop"></div>
 </body>
 
 </html>
