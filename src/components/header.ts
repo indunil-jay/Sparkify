@@ -3,6 +3,8 @@ import { toggleCloseBtn, toggleOpenBtn } from "..";
 const mobileNavigation =
   document.querySelector<HTMLElement>(".mobile__header")!;
 
+const body = document.body;
+
 //mobileNavigation
 const toggleMobileNavigation = () => {
   toggleOpenBtn.classList.remove("header__icon--menu--active");
@@ -10,6 +12,8 @@ const toggleMobileNavigation = () => {
   toggleCloseBtn.classList.remove("header__icon--close--hidden");
   toggleCloseBtn.classList.add("header__icon--close--active");
   mobileNavigation.dataset.expanded = "true";
+  body.classList.add("disable-scroll");
+  body.classList.add("nav-open");
 };
 
 const closeMobileNavigation = () => {
@@ -18,6 +22,8 @@ const closeMobileNavigation = () => {
   toggleOpenBtn.classList.remove("header__icon--menu--hidden");
   toggleOpenBtn.classList.add("header__icon--menu--active");
   mobileNavigation.dataset.expanded = "false";
+  body.classList.remove("disable-scroll");
+  body.classList.remove("nav-open");
 };
 
 export const handleToggleClick = () => {

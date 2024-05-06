@@ -38,3 +38,24 @@ body {
   color: var(--icon-primary);
   cursor: pointer;
 }
+
+/* Disable scrolling when navigation menu is open */
+.container.disable-scroll {
+  overflow: hidden;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  z-index: 9998;
+  display: none;
+}
+
+body.nav-open .backdrop {
+  display: block;
+}

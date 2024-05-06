@@ -1,4 +1,5 @@
 .header {
+  z-index: 10000;
   &__block {
     position: relative;
     grid-column: center-start / center-end;
@@ -9,7 +10,6 @@
         [col-start] minmax(min-content, 17.4rem) [col-end]
       )
       [center-end] 1fr [full-end];
-    z-index: 999;
 
     @include responsive(largeScreen) {
       grid-template-columns:
