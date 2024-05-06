@@ -4,9 +4,10 @@
   grid-template-rows: auto;
   grid-gap: var(--space-13);
   height: 12rem;
-  margin-top: 4rem;
+  padding: 4rem;
   position: relative;
   z-index: 99;
+  background-color: var(--color-bg);
 
   @include responsive(tabs) {
     grid-template-columns: 1fr;

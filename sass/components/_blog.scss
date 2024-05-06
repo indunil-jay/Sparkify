@@ -1,5 +1,7 @@
 .blog {
+  background-color: var(--color-bg);
   &__cards {
+    background-color: var(--color-bg);
     display: grid;
     grid-template-columns: repeat(3, 36rem);
     grid-gap: var(--space-13);

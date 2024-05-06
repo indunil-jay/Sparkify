@@ -1,4 +1,5 @@
 .projects {
+  background-color: var(--color-bg);
   &__tabBtnsContainer {
     @include flex-center;
     flex-direction: column;

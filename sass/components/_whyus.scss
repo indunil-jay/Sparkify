@@ -3,6 +3,7 @@
   grid-template-columns: 50% 1fr;
   grid-template-rows: auto;
   gap: var(--space-10);
+  background-color: var(--color-bg);
 
   @include responsive(tabs) {
     grid-template-columns: 1fr;
@@ -29,6 +30,7 @@
   &__header {
     margin: var(--space-10) 0;
     text-transform: capitalize;
+    color: var(--text-primary);
   }
   &__paragraph {
     color: var(--color-grey);

@@ -11,17 +11,17 @@
 
 .section {
   &__hero {
-    background-color: var(--color-white);
+    background-color: var(--color-bg);
     grid-column: center-start / center-end;
     position: relative;
   }
   &__services {
-    background-color: var(--color-white);
+    background-color: var(--color-bg);
     grid-column: center-start / center-end;
   }
   &__whyus {
     margin-top: 20rem;
-    background-color: var(--color-white);
+    background-color: var(--color-bg);
     grid-column: center-start / center-end;
 
     @include responsive(tabs) {
@@ -31,38 +31,38 @@
 
   &__team {
     margin-top: 20rem;
-    background-color: var(--color-white);
+    background-color: var(--color-bg);
     grid-column: center-start / center-end;
   }
 
   &__offers {
     margin-top: 20rem;
-    background-color: var(--color-white);
+    background-color: var(--color-bg);
     grid-column: center-start / center-end;
   }
   &__pricing {
     margin-top: 20rem;
-    background-color: var(--color-white);
+    background-color: var(--color-bg);
     grid-column: center-start / center-end;
   }
   &__projects {
     margin-top: 20rem;
-    background-color: var(--color-white);
+    background-color: var(--color-bg);
     grid-column: center-start / center-end;
   }
   &__testimonial {
     margin-top: 20rem;
-    background-color: var(--color-white);
+    background-color: var(--color-bg);
     grid-column: center-start / center-end;
   }
   &__bannerClients {
     margin-top: 20rem;
-    background-color: var(--color-white);
+    background-color: var(--color-bg);
     grid-column: center-start / center-end;
   }
   &__brands {
     margin-top: 20rem;
-    background-color: var(--color-white);
+    background-color: var(--color-bg);
     grid-column: center-start / center-end;
 
     @include responsive(tabs) {
@@ -71,24 +71,25 @@
   }
   &__blog {
     margin-top: 20rem;
-    background-color: var(--color-white);
+    background-color: var(--color-bg);
     grid-column: center-start / center-end;
   }
   &__contact {
     margin-top: 20rem;
 
-    background-color: var(--color-white);
+    background-color: var(--color-bg);
     grid-column: center-start / center-end;
   }
   &__banner {
     margin-top: 20rem;
     margin-bottom: 20rem;
-    background-color: var(--color-white);
+    background-color: var(--color-bg);
     grid-column: center-start / center-end;
   }
 
   &__details {
     margin-bottom: var(--space-17);
+    background-color: var(--color-bg);
   }
 
   &__textGroup {
@@ -101,6 +102,7 @@
 
   &__title {
     margin-bottom: var(--space-5);
+    color: var(--text-primary);
     width: 55%;
 
     @include responsive(mobile-lg) {

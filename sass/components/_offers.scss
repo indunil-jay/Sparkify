@@ -1,4 +1,5 @@
 .offers {
+  background-color: var(--color-bg);
   &__services {
     display: grid;
     grid-template-columns: repeat(3, 36rem);
