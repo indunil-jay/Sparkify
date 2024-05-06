@@ -173,7 +173,7 @@ const createDots = function () {
   slides.forEach((_, i) => {
     dotContaier.insertAdjacentHTML(
       "beforeend",
-      `<button class ="dots__dot" data-slide="${i}"></button>`
+      `<button class ="dots__dot" data-slide="${i}" aria-label="slider-dot-${i}"></button>`
     );
   });
 };

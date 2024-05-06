@@ -61,6 +61,7 @@
     font-size: 2.4rem;
     font-weight: 500;
     margin-bottom: var(--spcae-8);
+    color: var(--text-primary);
   }
 
   &__text {
@@ -73,7 +74,7 @@
   &__author {
     margin-left: var(--space-13);
     font-style: normal;
-
+    color: var(--text-primary);
     display: grid;
     grid-template-columns: 6.5rem 1fr;
     column-gap: 2rem;

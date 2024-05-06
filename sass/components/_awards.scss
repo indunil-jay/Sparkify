@@ -16,7 +16,7 @@
     @include flex-center;
     flex-direction: column;
     height: 16rem;
-    color: var(--color-grey);
+    color: var(--text-primary);
   }
   &__client-number {
     color: var(--color--primary-500);

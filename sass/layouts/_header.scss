@@ -206,12 +206,15 @@
 
 .header.sticky {
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.95);
+
   top: 0;
   left: 0;
   right: 0;
   z-index: 99999;
   @include responsive(largeScreen) {
     margin: 0 13rem;
+  }
+  @include responsive(desktop-small) {
+    margin: 0;
   }
 }
