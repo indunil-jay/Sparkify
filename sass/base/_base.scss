@@ -20,6 +20,14 @@ body {
       [col-start] minmax(min-content, 17.4rem) [col-end]
     )
     [center-end] 1fr [full-end];
+  @include responsive(largeScreen) {
+    grid-template-columns:
+      [full-start] 1fr [center-start] repeat(
+        8,
+        [col-start] minmax(17.4rem, 22rem) [col-end]
+      )
+      [center-end] 1fr [full-end];
+  }
 }
 
 .icon {

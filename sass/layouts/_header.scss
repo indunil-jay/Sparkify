@@ -9,6 +9,15 @@
         [col-start] minmax(min-content, 17.4rem) [col-end]
       )
       [center-end] 1fr [full-end];
+
+    @include responsive(largeScreen) {
+      grid-template-columns:
+        [full-start] 1fr [center-start] repeat(
+          8,
+          [col-start] minmax(17.4rem, 22rem) [col-end]
+        )
+        [center-end] 1fr [full-end];
+    }
   }
 
   grid-column: center-start / center-end;
@@ -201,6 +210,5 @@
   left: 0;
   right: 0;
   z-index: 99999;
-  margin: 0 auto;
-  width: 100%;
+  margin: 0 13rem;
 }
