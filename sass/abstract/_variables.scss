@@ -5,6 +5,8 @@
     --text-light-gray: #263189;
     --icon-primary: #4e6bff;
     --border-primary: #c2d8ff;
+    --text-secondary: rgb(121, 128, 138);
+    --text-tertiary: #263189;
   }
 
   &[data-theme="dark"] {
@@ -13,6 +15,8 @@
     --text-light-gray: #ecf4ff;
     --icon-primary: #ecf4ff;
     --border-primary: #181717;
+    --text-secondary: #4e6bff;
+    --text-tertiary: #4e6bff;
   }
 
   --color--primary-50: #ecf4ff;

@@ -101,11 +101,11 @@
   }
   &__link:visited,
   &__link:active {
-    color: var(--color--primary-900);
+    color: var(--text-tertiary);
     transition: var(--transition-timing-3);
 
     &:hover {
-      color: var(--color--primary-800);
+      color: var(--color--primary-600);
     }
   }
 

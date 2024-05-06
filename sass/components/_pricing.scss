@@ -18,10 +18,11 @@
       padding: var(--space-4) var(--space-10);
       width: 100%;
       border-radius: var(--space-17);
+      color: var(--text-tertiary);
     }
     &--active {
       background-color: var(--color--primary-500);
-      color: var(--color-white);
+      color: var(--color-white) !important;
     }
   }
 

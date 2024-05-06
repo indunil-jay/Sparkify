@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 38rem 1fr 38rem;
   height: 10rem;
-  border-bottom: 1px solid var(--color--primary-50);
+  border-bottom: 1px solid var(--border-primary);
   box-shadow: var(--box-shadow-bottom);
   background-color: var(--color-bg);
   @include responsive(desktop-small) {
