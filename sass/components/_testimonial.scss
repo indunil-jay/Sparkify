@@ -1,6 +1,7 @@
 .testimonial {
   &__container {
   }
+
   &__slider {
     max-width: 100rem;
     height: 50rem;
@@ -8,19 +9,27 @@
     position: relative;
 
     overflow: hidden;
+
+    @include responsive(mobile-lg) {
+      height: 64rem;
+    }
   }
 
   &__slide {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 50rem;
+    min-height: 50rem;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
     transition: transform 1s;
+
+    @include responsive(mobile-lg) {
+      margin-top: 4rem;
+    }
 
     img {
       width: 100%;
@@ -31,7 +40,9 @@
   &__details {
     width: 65%;
     position: relative;
-
+    @include responsive(mobile-lg) {
+      width: 65%;
+    }
     &::before {
       content: "\201C";
       position: absolute;
@@ -42,6 +53,11 @@
       font-family: inherit;
       color: var(--icon-primary);
       z-index: -1;
+
+      @include responsive(mobile-lg) {
+        top: -6rem;
+        left: -8rem;
+      }
     }
   }
   &__header {
@@ -54,6 +70,7 @@
     font-size: var(--font-size-smd);
     margin-bottom: var(--space-14);
     color: var(--text-secondary);
+    hyphens: auto;
   }
 
   &__author {

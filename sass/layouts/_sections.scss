@@ -68,6 +68,10 @@
     margin-top: 20rem;
     background-color: var(--color-bg);
     grid-column: center-start / center-end;
+
+    @include responsive(mobile-lg) {
+      margin-top: 0rem;
+    }
   }
   &__brands {
     margin-top: 20rem;
