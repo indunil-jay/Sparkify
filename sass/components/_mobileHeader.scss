@@ -5,22 +5,22 @@
   backdrop-filter: blur(5px);
   transition: transform 0.2s ease-in;
   display: none;
-  z-index: 999;
+  z-index: 99;
 
   @include responsive(tabs) {
     display: block;
-    inset: var(--space-22) 0 0 50%;
+    inset: 0 0 0 50%;
   }
   @include responsive(mobile-md) {
     display: block;
-    inset: var(--space-22) 0 0 40%;
+    inset: 0 0 0 40%;
   }
 
   @include responsive(mobile-sm) {
     display: flex;
     justify-content: center;
     padding-top: 10rem;
-    inset: var(--space-22) 0 0 0;
+    inset: 0 0 0 0;
   }
 
   &__navigations {

@@ -121,7 +121,6 @@ const obsCallback = function (entries) {
   const [entry] = entries;
   if (!entry.isIntersecting) {
     nav.classList.add("sticky");
-    console.log("stick");
   } else {
     nav.classList.remove("sticky");
   }
