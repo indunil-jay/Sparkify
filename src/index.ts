@@ -110,3 +110,26 @@ themeToggle.addEventListener("click", function () {
   // Toggle icon visibility
   toggleIconVisibility();
 });
+
+//sticky navigation
+const header = document.querySelector(".header__block")!;
+const nav = document.querySelector(".header")!;
+const navHeight = nav.getBoundingClientRect().height;
+
+//@ts-ignore
+const obsCallback = function (entries) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) {
+    nav.classList.add("sticky");
+    console.log("stick");
+  } else {
+    nav.classList.remove("sticky");
+  }
+};
+
+const headerObserver = new IntersectionObserver(obsCallback, {
+  root: null,
+  threshold: 0,
+  rootMargin: `-${navHeight}px`,
+});
+headerObserver.observe(header);

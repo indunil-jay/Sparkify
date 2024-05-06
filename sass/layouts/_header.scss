@@ -1,4 +1,16 @@
 .header {
+  &__block {
+    position: relative;
+    grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns:
+      [full-start] 1fr [center-start] repeat(
+        8,
+        [col-start] minmax(min-content, 17.4rem) [col-end]
+      )
+      [center-end] 1fr [full-end];
+  }
+
   grid-column: center-start / center-end;
   padding-inline: 1rem;
   display: grid;
@@ -180,4 +192,13 @@
       box-shadow: var(--box-shadow-all-side);
     }
   }
+}
+
+.header.sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.95);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
 }
