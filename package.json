@@ -2,7 +2,7 @@
   "name": "sparkify",
   "version": "1.0.0",
   "description": "init",
-  "source": "src/index.html",
+  "source": "./index.html",
   "scripts": {
     "start": "parcel ./index.html",
     "build": "parcel build"
