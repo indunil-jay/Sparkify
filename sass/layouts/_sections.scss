@@ -42,27 +42,43 @@
     margin-top: 20rem;
     background-color: var(--color-bg);
     grid-column: center-start / center-end;
+    @include responsive(tabs) {
+      margin-top: 10rem;
+    }
   }
 
   &__offers {
     margin-top: 20rem;
     background-color: var(--color-bg);
     grid-column: center-start / center-end;
+    @include responsive(tabs) {
+      margin-top: 10rem;
+    }
   }
   &__pricing {
     margin-top: 20rem;
     background-color: var(--color-bg);
     grid-column: center-start / center-end;
+    @include responsive(tabs) {
+      margin-top: 10rem;
+    }
   }
   &__projects {
     margin-top: 20rem;
     background-color: var(--color-bg);
     grid-column: center-start / center-end;
+    @include responsive(tabs) {
+      margin-top: 10rem;
+    }
   }
   &__testimonial {
     margin-top: 20rem;
     background-color: var(--color-bg);
     grid-column: center-start / center-end;
+
+    @include responsive(tabs) {
+      margin-top: 10rem;
+    }
   }
   &__bannerClients {
     margin-top: 20rem;
@@ -85,19 +101,30 @@
   &__blog {
     margin-top: 20rem;
     background-color: var(--color-bg);
+
     grid-column: center-start / center-end;
+    @include responsive(tabs) {
+      margin-top: 10rem;
+    }
   }
   &__contact {
     margin-top: 20rem;
 
     background-color: var(--color-bg);
     grid-column: center-start / center-end;
+
+    @include responsive(tabs) {
+      margin-top: 10rem;
+    }
   }
   &__banner {
     margin-top: 20rem;
 
     background-color: var(--color-bg);
     grid-column: center-start / center-end;
+    @include responsive(tabs) {
+      margin-top: 10rem;
+    }
   }
 
   &__details {
